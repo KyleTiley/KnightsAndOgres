@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class BoardCreation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private const int BOARD_HEIGHT = 9;
+    private const int BOARD_WIDTH = 9;
 
-    // Update is called once per frame
-    void Update()
-    {
+    private void CreateBoard(){
         
     }
 }
