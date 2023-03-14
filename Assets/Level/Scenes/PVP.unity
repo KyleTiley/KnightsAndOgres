@@ -604,8 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b302b082c3f50d396b8bc9da35906040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridWidth: 9
-  gridHeight: 9
+  gridStartPos: {x: -8, y: -4, z: 0}
   tile: {fileID: 2953800942897858990, guid: 5f29c7a02b51b8dc4a95f589a21d0e94, type: 3}
 --- !u!4 &2018362720
 Transform:
