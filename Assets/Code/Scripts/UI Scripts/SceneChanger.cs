@@ -11,7 +11,7 @@ public class SceneChanger : MonoBehaviour
     }
 
     // Player vs Player mode
-    private void PVP(){
+    public void PVP(){
         SceneManager.LoadScene(1);
     }
 
