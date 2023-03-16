@@ -49,7 +49,17 @@ public class GameController : MonoBehaviour
     // Called to start the game and choose a random starting player
     public void StartGame(){
         isPlayersTurn = Random.Range(0,2) == 1;
+        ResetBoard();
         ResetGame();
+    }
+
+    // Called to reset the board
+    private void ResetBoard(){
+        foreach(GameObject boardPanel in boardPanels){
+            boardPanel.GetComponentInChildren<Button>().interactable = true;
+            SetColour(boardPanel.GetComponentInChildren<Button>(), Color.white);
+        }
+        isGameOver = false;
     }
 
     // Called to reset the game
