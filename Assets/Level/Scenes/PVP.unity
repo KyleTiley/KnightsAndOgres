@@ -11375,6 +11375,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa45dc48776553b84a826f6feb856662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boardPanels:
+  - {fileID: 2027484773}
+  - {fileID: 275131408}
+  - {fileID: 924363008}
+  - {fileID: 202518642}
+  - {fileID: 1105536615}
+  - {fileID: 1196167849}
+  - {fileID: 1077899721}
+  - {fileID: 526011405}
+  - {fileID: 926294820}
   tileButtons:
   - {fileID: 789025825}
   - {fileID: 1865631084}
@@ -11385,6 +11395,96 @@ MonoBehaviour:
   - {fileID: 39016833}
   - {fileID: 961959774}
   - {fileID: 584202154}
+  board1Buttons:
+  - {fileID: 54431885}
+  - {fileID: 165791057}
+  - {fileID: 198063995}
+  - {fileID: 307819584}
+  - {fileID: 1183477025}
+  - {fileID: 1982123857}
+  - {fileID: 772919648}
+  - {fileID: 427409401}
+  - {fileID: 1812697784}
+  board2Buttons:
+  - {fileID: 795331809}
+  - {fileID: 1282270817}
+  - {fileID: 951371536}
+  - {fileID: 985014633}
+  - {fileID: 956002889}
+  - {fileID: 1811147726}
+  - {fileID: 1921913312}
+  - {fileID: 328346550}
+  - {fileID: 1193447212}
+  board3Buttons:
+  - {fileID: 765888597}
+  - {fileID: 1545055583}
+  - {fileID: 2049300532}
+  - {fileID: 902558899}
+  - {fileID: 1790144116}
+  - {fileID: 815974087}
+  - {fileID: 263721763}
+  - {fileID: 1868957751}
+  - {fileID: 1348552024}
+  board4Buttons:
+  - {fileID: 1286496612}
+  - {fileID: 33302610}
+  - {fileID: 952172306}
+  - {fileID: 887428817}
+  - {fileID: 636296781}
+  - {fileID: 1349336335}
+  - {fileID: 1129971223}
+  - {fileID: 909440430}
+  - {fileID: 1591047177}
+  board5Buttons:
+  - {fileID: 789025825}
+  - {fileID: 1865631084}
+  - {fileID: 2081592180}
+  - {fileID: 1678943792}
+  - {fileID: 1869996077}
+  - {fileID: 1554641763}
+  - {fileID: 39016833}
+  - {fileID: 961959774}
+  - {fileID: 584202154}
+  board6Buttons:
+  - {fileID: 1750523484}
+  - {fileID: 84395840}
+  - {fileID: 822432599}
+  - {fileID: 790407748}
+  - {fileID: 1356311907}
+  - {fileID: 986832113}
+  - {fileID: 1646232337}
+  - {fileID: 980990338}
+  - {fileID: 423524960}
+  board7Buttons:
+  - {fileID: 868050296}
+  - {fileID: 338264788}
+  - {fileID: 2110506462}
+  - {fileID: 2095765633}
+  - {fileID: 71593721}
+  - {fileID: 1251242982}
+  - {fileID: 120635934}
+  - {fileID: 1465249906}
+  - {fileID: 747393613}
+  board8Buttons:
+  - {fileID: 917469400}
+  - {fileID: 505005469}
+  - {fileID: 80735681}
+  - {fileID: 22244687}
+  - {fileID: 1989918912}
+  - {fileID: 1328196827}
+  - {fileID: 487784787}
+  - {fileID: 81685550}
+  - {fileID: 564331905}
+  board9Buttons:
+  - {fileID: 1392524657}
+  - {fileID: 1272598993}
+  - {fileID: 351675860}
+  - {fileID: 956918533}
+  - {fileID: 1987954686}
+  - {fileID: 652162440}
+  - {fileID: 1137562621}
+  - {fileID: 1563578667}
+  - {fileID: 1234385975}
 --- !u!1 &2081592178
 GameObject:
   m_ObjectHideFlags: 0

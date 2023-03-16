@@ -5,11 +5,31 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    //VARIABLES FOR GAME
-
+    // CONTAINERS FOR BOARD
+    [SerializeField]
+    private List<GameObject> boardPanels = new List<GameObject>();
     [SerializeField]
     private List<Button> tileButtons = new List<Button>();
+    [SerializeField]
+    private List<Button> board1Buttons = new List<Button>();
+    [SerializeField]
+    private List<Button> board2Buttons = new List<Button>();
+    [SerializeField]
+    private List<Button> board3Buttons = new List<Button>();
+    [SerializeField]
+    private List<Button> board4Buttons = new List<Button>();
+    [SerializeField]
+    private List<Button> board5Buttons = new List<Button>();
+    [SerializeField]
+    private List<Button> board6Buttons = new List<Button>();
+    [SerializeField]
+    private List<Button> board7Buttons = new List<Button>();
+    [SerializeField]
+    private List<Button> board8Buttons = new List<Button>();
+    [SerializeField]
+    private List<Button> board9Buttons = new List<Button>();
 
+    //VARIABLES FOR GAME
     private bool isPlayersTurn;   // true: player 1, false: player2
     private int tilesLeft;
     private bool isGameOver = true;
@@ -45,7 +65,7 @@ public class GameController : MonoBehaviour
     // Called when the game is over
     private void WinGame(){
         isGameOver = true;
-        EnableTileButtons(false);
+        DisableTileButtons(true);
     }
 
     // Called if the game is a draw
@@ -53,10 +73,11 @@ public class GameController : MonoBehaviour
         // would i even need this?
     }
 
-    private void EnableTileButtons(bool enabled, bool ignore = false){
+
+    private void DisableTileButtons(bool disable){
         foreach(Button tileButton in tileButtons){
-            if(!enabled || ignore || GetColour(tileButton) == Color.white){
-                tileButton.interactable = enabled;
+            if(disable || GetColour(tileButton) == Color.white){    //not sure if i need the getcolour part
+                tileButton.interactable = !disable;
             }
         }
     }
