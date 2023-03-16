@@ -5,10 +5,6 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    // Add variables for AI
-    // Might have to hard code shortcuts for starting moves to improve speed
-    // A visualiser for AI moves would also be cool
-
     //VARIABLES FOR GAME
 
     [SerializeField]
@@ -20,11 +16,14 @@ public class GameController : MonoBehaviour
 
     // VARIABLES FOR MINMAX
     // do this later
+    // Might have to hard code shortcuts for starting moves to improve speed
+    // A visualiser for AI moves would also be cool
 
     // METHODS FOR GAME
 
     private void Start() {
         StartGame();
+        // Make this initiate from the menu rather, once that is set up
     }
 
     // Called to start the game and choose a random starting player
@@ -37,7 +36,7 @@ public class GameController : MonoBehaviour
     private void ResetGame(){
         foreach(Button tileButton in tileButtons){
             tileButton.interactable = true;
-            tileButton.GetComponent<Image>().color = Color.white;
+            SetColour(tileButton, Color.white);
         }
         tilesLeft = 9;
         isGameOver = false;
@@ -90,7 +89,7 @@ public class GameController : MonoBehaviour
             Debug.Log(tileButton.GetComponent<Image>().color);
         }
         tilesLeft--;
-
+        colour = GetColour(tileButton);
         return CheckForWin(colour);
     }
 
