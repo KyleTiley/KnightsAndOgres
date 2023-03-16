@@ -30,13 +30,17 @@ public class GameController : MonoBehaviour
     // Called to start the game and choose a random starting player
     public void StartGame(){
         isPlayersTurn = Random.Range(0,2) == 1;
-        Debug.Log(isPlayersTurn);
         ResetGame();
     }
 
     // Called to reset the game
     private void ResetGame(){
-        //reset the game here
+        foreach(Button tileButton in tileButtons){
+            tileButton.interactable = true;
+            tileButton.GetComponent<Image>().color = Color.white;
+        }
+        tilesLeft = 9;
+        isGameOver = false;
     }
 
     // Called when the game is over
@@ -60,16 +64,31 @@ public class GameController : MonoBehaviour
 
     // Get the current colour of a button
     private Color GetColour(Button tileButton){
+        Debug.Log(tileButton.GetComponent<Image>().color);
         return tileButton.GetComponent<Image>().color;
+    }
+
+    private void SetColour(Button tileButton, Color colour){
+        tileButton.GetComponent<Image>().color = colour;
     }
 
     // Sets the tile to whichever player's token is placed, and then checks for a win
     private bool SetTileToken(Button tileButton){
         Color colour = GetColour(tileButton);
         if(colour != Color.white){
+            Debug.Log("false");
             return false;
         }
-        colour = Color.black; // TEMP
+        if(isPlayersTurn){
+            SetColour(tileButton, Color.blue);
+            Debug.Log("SET BLUE");
+            Debug.Log(tileButton.GetComponent<Image>().color);
+        }
+        else if(!isPlayersTurn){
+            SetColour(tileButton, Color.red);
+            Debug.Log("SET RED");
+            Debug.Log(tileButton.GetComponent<Image>().color);
+        }
         tilesLeft--;
 
         return CheckForWin(colour);
