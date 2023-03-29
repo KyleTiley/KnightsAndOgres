@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameController : MonoBehaviour
+public class OldGameController : MonoBehaviour
 {
     // CONTAINERS FOR BOARD
     [SerializeField]
@@ -29,10 +29,10 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private List<Button> board9Buttons = new List<Button>();
 
-    //VARIABLES FOR GAME
+    // VARIABLES FOR GAME
     private bool isPlayersTurn;   // true: player 1, false: player2
     private int tilesLeft;
-    private bool isGameOver = true;
+    private bool isBoardOver = true;
 
     // VARIABLES FOR MINMAX
     // do this later
@@ -59,7 +59,7 @@ public class GameController : MonoBehaviour
             boardPanel.GetComponentInChildren<Button>().interactable = true;
             SetColour(boardPanel.GetComponentInChildren<Button>(), Color.white);
         }
-        isGameOver = false;
+        isBoardOver = false;
     }
 
     // Called to reset the game
@@ -69,12 +69,12 @@ public class GameController : MonoBehaviour
             SetColour(tileButton, Color.white);
         }
         tilesLeft = 9;
-        isGameOver = false;
+        isBoardOver = false;
     }
 
-    // Called when the game is over
-    private void WinGame(){
-        isGameOver = true;
+    // Called when the game is over on a single board
+    private void WinBoard(){
+        isBoardOver = true;
         DisableTileButtons(true);
     }
 
@@ -124,11 +124,11 @@ public class GameController : MonoBehaviour
         return CheckForWin(colour);
     }
 
-    // Called when a tile button is clicked
+    // Called when a tile button is clicked to check for all scenarios
     public void OnTileButtonClick(Button tileButton){
-        // Resets game if it is over
-        if(isGameOver){
-            ResetGame();
+        // Resets game if it is over (used to do this)
+        if(isBoardOver){
+            // set the symbol here eventually
             return;
         }
         // not sure if i need this
@@ -136,9 +136,9 @@ public class GameController : MonoBehaviour
             return;
         }
 
-        // Checks if a player wins
+        // Checks if a player wins a board
         if(SetTileToken(tileButton)){
-            WinGame();
+            WinBoard();
         }
 
         tileButton.interactable = false;    // Can't interact with button again
