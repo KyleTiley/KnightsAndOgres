@@ -1,35 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BoardController : MonoBehaviour
 {
-    [SerializeField]
-    public bool boardWon { get; private set; }
-    [SerializeField]
-    public string winner { get; private set; }
-    [SerializeField]
-    public static int boardsWon { get; private set; }
+    // REFERENCES
+    public List<TileController> tileControllers = new List<TileController>();
 
+    // VARIABLES
+    public int tilesPlayed;
+
+    // METHODS
     private void Awake() {
-        boardWon = false;
-        winner = "";
-        boardsWon = 0;    
-    }
-
-    public void setWinner(string winnerSymbol){
-        if(!boardWon){
-            boardsWon++;
-            boardWon = true;
-            winner = winnerSymbol;
-
-            // use the correct path below to find winner symbols
-            this.transform.Find("winner symbol").GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(winnerSymbol);
-            this.transform.Find("winner symbol").GetComponent<SpriteRenderer>().enabled = true;
+        foreach(Transform child in transform){
+            tileControllers.Add(child.GetComponent<TileController>());
         }
+
+        tilesPlayed = 0;
     }
 
-    private void CheckBoardWinner(){
-
+    public void SetBoardWinner(){
+        this.GetComponent<Image>().color = Color.green;
     }
 }

@@ -258,9 +258,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &33302608
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,9 +399,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &39016831
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,9 +540,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &54431883
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,9 +681,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &71593719
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,9 +822,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &80735679
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,9 +963,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &81685548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,9 +1104,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &84395838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,9 +1245,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &120635932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,9 +1386,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &165791055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,9 +1527,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &198063993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,9 +1668,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &202518642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,9 +1907,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &275131408
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,9 +2146,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &328346548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,9 +2287,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &338264786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2386,9 +2428,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &351675858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2524,9 +2569,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &423524958
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,9 +2710,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &427409399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,9 +2851,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &487784785
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,9 +2992,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &505005467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,9 +3133,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &526011405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,9 +3372,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &584202152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,9 +3513,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &636296779
 GameObject:
   m_ObjectHideFlags: 0
@@ -3588,9 +3654,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &652162438
 GameObject:
   m_ObjectHideFlags: 0
@@ -3726,9 +3795,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &747393611
 GameObject:
   m_ObjectHideFlags: 0
@@ -3864,9 +3936,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &765888595
 GameObject:
   m_ObjectHideFlags: 0
@@ -4002,9 +4077,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &772919646
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,9 +4218,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &789025823
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,9 +4359,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &790407746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4416,9 +4500,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &795331807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4554,9 +4641,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &815974085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4692,9 +4782,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &822432597
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,9 +4923,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &868050294
 GameObject:
   m_ObjectHideFlags: 0
@@ -4968,9 +5064,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &887428815
 GameObject:
   m_ObjectHideFlags: 0
@@ -5106,9 +5205,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &902558897
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,9 +5346,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &909440428
 GameObject:
   m_ObjectHideFlags: 0
@@ -5382,9 +5487,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &917469398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5520,9 +5628,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &924363008
 GameObject:
   m_ObjectHideFlags: 0
@@ -5854,9 +5965,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &952172304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5992,9 +6106,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &956002887
 GameObject:
   m_ObjectHideFlags: 0
@@ -6130,9 +6247,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &956918531
 GameObject:
   m_ObjectHideFlags: 0
@@ -6268,9 +6388,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &961959772
 GameObject:
   m_ObjectHideFlags: 0
@@ -6406,9 +6529,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &980990336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6544,9 +6670,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &985014631
 GameObject:
   m_ObjectHideFlags: 0
@@ -6682,9 +6811,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &986832111
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,9 +6952,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1077899721
 GameObject:
   m_ObjectHideFlags: 0
@@ -7238,9 +7373,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1137562619
 GameObject:
   m_ObjectHideFlags: 0
@@ -7376,9 +7514,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1183477023
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,9 +7655,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1193447210
 GameObject:
   m_ObjectHideFlags: 0
@@ -7652,9 +7796,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1196167849
 GameObject:
   m_ObjectHideFlags: 0
@@ -7888,9 +8035,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1251242980
 GameObject:
   m_ObjectHideFlags: 0
@@ -8026,9 +8176,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1272598991
 GameObject:
   m_ObjectHideFlags: 0
@@ -8164,9 +8317,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1282270815
 GameObject:
   m_ObjectHideFlags: 0
@@ -8302,9 +8458,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1286496610
 GameObject:
   m_ObjectHideFlags: 0
@@ -8440,9 +8599,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1324470332
 GameObject:
   m_ObjectHideFlags: 0
@@ -8622,9 +8784,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1348552022
 GameObject:
   m_ObjectHideFlags: 0
@@ -8760,9 +8925,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1349336333
 GameObject:
   m_ObjectHideFlags: 0
@@ -8898,9 +9066,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1356311905
 GameObject:
   m_ObjectHideFlags: 0
@@ -9036,9 +9207,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1392524655
 GameObject:
   m_ObjectHideFlags: 0
@@ -9174,9 +9348,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1465249904
 GameObject:
   m_ObjectHideFlags: 0
@@ -9312,9 +9489,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1545055581
 GameObject:
   m_ObjectHideFlags: 0
@@ -9450,9 +9630,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1554641761
 GameObject:
   m_ObjectHideFlags: 0
@@ -9588,9 +9771,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1563578665
 GameObject:
   m_ObjectHideFlags: 0
@@ -9726,9 +9912,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1591047175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9864,9 +10053,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1646232335
 GameObject:
   m_ObjectHideFlags: 0
@@ -10002,9 +10194,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1648544386
 GameObject:
   m_ObjectHideFlags: 0
@@ -10241,9 +10436,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1750523482
 GameObject:
   m_ObjectHideFlags: 0
@@ -10379,9 +10577,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1790144114
 GameObject:
   m_ObjectHideFlags: 0
@@ -10517,9 +10718,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1803612201
 GameObject:
   m_ObjectHideFlags: 0
@@ -10723,9 +10927,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1812697782
 GameObject:
   m_ObjectHideFlags: 0
@@ -10861,9 +11068,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1865631082
 GameObject:
   m_ObjectHideFlags: 0
@@ -10999,9 +11209,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1868957749
 GameObject:
   m_ObjectHideFlags: 0
@@ -11137,9 +11350,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1869996075
 GameObject:
   m_ObjectHideFlags: 0
@@ -11275,9 +11491,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1921913310
 GameObject:
   m_ObjectHideFlags: 0
@@ -11413,9 +11632,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1982123855
 GameObject:
   m_ObjectHideFlags: 0
@@ -11551,9 +11773,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1987954684
 GameObject:
   m_ObjectHideFlags: 0
@@ -11689,9 +11914,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &1989918910
 GameObject:
   m_ObjectHideFlags: 0
@@ -11827,9 +12055,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &2025471461
 GameObject:
   m_ObjectHideFlags: 0
@@ -12148,9 +12379,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &2073896673
 GameObject:
   m_ObjectHideFlags: 0
@@ -12161,6 +12395,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2073896674}
   - component: {fileID: 2073896675}
+  - component: {fileID: 2073896677}
+  - component: {fileID: 2073896676}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12305,6 +12541,43 @@ MonoBehaviour:
   - {fileID: 1137562621}
   - {fileID: 1563578667}
   - {fileID: 1234385975}
+--- !u!114 &2073896676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7753d85c82277c6e79de447c68794642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayersTurn: 0
+--- !u!114 &2073896677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1972af1f7e575acf58d2ca0806cd9419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardControllers:
+  - {fileID: 2027484777}
+  - {fileID: 275131412}
+  - {fileID: 924363012}
+  - {fileID: 202518646}
+  - {fileID: 1105536619}
+  - {fileID: 1196167853}
+  - {fileID: 1077899725}
+  - {fileID: 526011409}
+  - {fileID: 926294824}
+  tileController: {fileID: 0}
+  turnController: {fileID: 2073896676}
 --- !u!1 &2081592178
 GameObject:
   m_ObjectHideFlags: 0
@@ -12440,9 +12713,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &2095765631
 GameObject:
   m_ObjectHideFlags: 0
@@ -12578,9 +12854,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}
 --- !u!1 &2110506460
 GameObject:
   m_ObjectHideFlags: 0
@@ -12716,6 +12995,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisButton: {fileID: 0}
+  canUseTile: 0
   locationOnMainBoard: 
   locationOnBoard: 
   thisSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  orcSprite: {fileID: 0}

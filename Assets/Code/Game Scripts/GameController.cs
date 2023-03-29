@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    // VARIABLES FOR GAME
-    private bool isPlayersTurn; // true: player 1, false: player 2
-    private bool isGameOver;
-    private int totalBoardsWon;
+    // REFERENCES FOR GLOBAL ACCESS
+    public static GameController Instance { get; private set; }
+    public TurnController turnController;
+    public List<BoardController> boardControllers = new List<BoardController>();
 
-    public void StartGame(){
-        isPlayersTurn = Random.Range(0,2) == 1; // Decides if Player 1 should start
-
-        isGameOver = false;
-        totalBoardsWon = 0;
+    // ?? check if this is needed
+    private void Awake() {
+        if(Instance == null){
+            Instance = this;
+        }
+        else{
+            Destroy(gameObject);
+        }
     }
 }
