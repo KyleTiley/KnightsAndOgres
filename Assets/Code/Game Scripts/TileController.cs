@@ -8,7 +8,7 @@ public class TileController : MonoBehaviour
     // VARIABLES FOR TILE FUNCTIONALITY
     [SerializeField]
     private Button thisButton;
-    private TurnController turnController;
+    public TurnController turnController;
     private BoardController boardController;
     [SerializeField]
     private bool canUseTile;
@@ -28,7 +28,7 @@ public class TileController : MonoBehaviour
     private Sprite orcSprite;
 
     // METHODS
-    private void Awake() {
+    private void Start() {
         // Sets up the global references
         GameController gameController = GameController.Instance;
         turnController = gameController.turnController;
