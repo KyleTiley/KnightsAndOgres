@@ -11,17 +11,19 @@ public class TileController : MonoBehaviour
     public TurnController turnController;
     private BoardController boardController;
     [SerializeField]
-    private bool canUseTile;
+    public bool canUseTile;
 
     // VARIABLES FOR TILE LOCATION
     [SerializeField]
     private string locationOnMainBoard;
     [SerializeField]
     private string locationOnBoard;
+    [SerializeField]
+    private char tileNumber;
 
     // VARIABLES FOR TILE SPRITE
     [SerializeField]
-    private Image thisSprite;
+    public Image thisSprite;
     [SerializeField]
     private Sprite knightSprite;
     [SerializeField]
@@ -57,13 +59,17 @@ public class TileController : MonoBehaviour
         locationOnMainBoard = transform.parent.name;
         // Gets the name of the tile
         locationOnBoard = transform.name;
+        //Gets the tile number in the board
+        tileNumber = locationOnBoard[locationOnBoard.Length-1];
     }
 
     // Called when this tile is clicked
     private void OnTileClick(){
+        // Checks if tile is not disabled or already used
         if(canUseTile){
             // Disables use of this tile
             canUseTile = false;
+            // Increases the tiles played on the tile's board
             boardController.tilesPlayed++;
 
             // Determines which symbol to place
@@ -73,10 +79,15 @@ public class TileController : MonoBehaviour
             else{
                 thisSprite.sprite = orcSprite;
             }
-            
-            if(boardController.tilesPlayed > 5){
-                boardController.SetBoardWinner();
+
+            // Checks if at least 3 tiles have been played, as that is the minimum to win a board
+            if(boardController.tilesPlayed >= 3){
+                // Calls to check if the board is won
+                boardController.CheckBoardWinner(turnController.isPlayersTurn);
             }
+            
+            // Calls to choose the next board
+            boardController.ChooseNextBoard(tileNumber);
 
             // Calls to switch players
             turnController.SwitchPlayers();
