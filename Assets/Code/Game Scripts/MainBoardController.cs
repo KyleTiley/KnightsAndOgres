@@ -49,8 +49,4 @@ public class MainBoardController : MonoBehaviour
             }
         }
     }
-
-    private void CheckGameWinner(){
-        // gotta do this
-    }
 }
