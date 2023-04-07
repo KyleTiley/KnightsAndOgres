@@ -5,34 +5,27 @@ using UnityEngine.UI;
 
 public class TileController : MonoBehaviour
 {
+    // REFERENCES
+    private GameController gameController;
+
     // VARIABLES FOR TILE FUNCTIONALITY
-    [SerializeField]
     private Button thisButton;
-    public TurnController turnController;
+    private TurnController turnController;
     private BoardController boardController;
-    [SerializeField]
     public bool canUseTile;
 
     // VARIABLES FOR TILE LOCATION
-    [SerializeField]
     private string locationOnMainBoard;
-    [SerializeField]
     private string locationOnBoard;
-    [SerializeField]
     private char tileNumber;
 
     // VARIABLES FOR TILE SPRITE
-    [SerializeField]
     public Image thisSprite;
-    [SerializeField]
-    private Sprite knightSprite;
-    [SerializeField]
-    private Sprite orcSprite;
 
-    // METHODS
-    private void Start() {
+    // FUNCTIONS
+    private void Awake() {
         // Sets up the global references
-        GameController gameController = GameController.Instance;
+        gameController = GameController.Instance;
         turnController = gameController.turnController;
         boardController = GetComponentInParent<BoardController>();
 
@@ -45,12 +38,7 @@ public class TileController : MonoBehaviour
         AssignTileLocations();
 
         // Sets the onClick event for the tile
-        thisButton.onClick.AddListener(OnTileClick);    
-
-
-        // the below spite loading should be done once, not for every button, fix this (or is it fine?)
-        knightSprite = Resources.Load<Sprite>("Art/Knight_Test");
-        orcSprite = Resources.Load<Sprite>("Art/Orc_Test");
+        thisButton.onClick.AddListener(OnTileClick);
     }
 
     // Used to assign location properties to the tile
@@ -59,7 +47,7 @@ public class TileController : MonoBehaviour
         locationOnMainBoard = transform.parent.name;
         // Gets the name of the tile
         locationOnBoard = transform.name;
-        //Gets the tile number in the board
+        // Gets the tile number in the board
         tileNumber = locationOnBoard[locationOnBoard.Length-1];
     }
 
@@ -74,10 +62,10 @@ public class TileController : MonoBehaviour
 
             // Determines which symbol to place
             if(turnController.isPlayersTurn){
-                thisSprite.sprite = knightSprite;
+                thisSprite.sprite = gameController.knightSprite;
             }
             else{
-                thisSprite.sprite = orcSprite;
+                thisSprite.sprite = gameController.ogreSprite;
             }
 
             // Checks if at least 3 tiles have been played, as that is the minimum to win a board

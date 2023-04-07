@@ -7,29 +7,34 @@ using System;
 public class BoardController : MonoBehaviour
 {
     // REFERENCES
-    public List<TileController> tileControllers = new List<TileController>();
+    private List<TileController> tileControllers = new List<TileController>();
     private MainBoardController mainBoardController;
 
     // VARIABLES
     public int tilesPlayed;
-    private bool boardIsWon;
+    public bool boardIsWon;
 
-    // METHODS
+    // FUNCTIONS
     private void Awake() {
         mainBoardController = GetComponentInParent<MainBoardController>();
         foreach(Transform child in transform){
             tileControllers.Add(child.GetComponent<TileController>());
         }
+
+        // Sets board variables to defaults
         tilesPlayed = 0;
         boardIsWon = false;
+        ChangeBoardImage(Color.green);
     }
 
+    // Checks all possibilities for a won board
     public void CheckBoardWinner(bool _isPlayersTurn){
         CheckRows(_isPlayersTurn);
         CheckColumns(_isPlayersTurn);
         CheckDiagonals(_isPlayersTurn);
     }
 
+    // Chooses the next playable board/s based on the previous move
     public void ChooseNextBoard(char _tileNumber){
         // Converts the tile char to an int for the board (minus 1 as lists start at 0)
         int nextBoard = (int)Char.GetNumericValue(_tileNumber) - 1;
@@ -91,7 +96,7 @@ public class BoardController : MonoBehaviour
     }
 
     // Checks diagonals for a winner
-    public void CheckDiagonals(bool _player){
+    private void CheckDiagonals(bool _player){
         if(tileControllers[4].thisSprite.sprite.name != "UISprite"){
             // First diagonal
             if(tileControllers[0].thisSprite.sprite.name == tileControllers[4].thisSprite.sprite.name
@@ -110,12 +115,13 @@ public class BoardController : MonoBehaviour
     // Sets the winner of this board
     private void SetBoardWinner(bool _winningPlayer){
         if(_winningPlayer){
-            this.GetComponent<Image>().color = Color.green;
+            ChangeBoardImage(Color.blue);
         }
         else{
-            this.GetComponent<Image>().color = Color.red;
+            ChangeBoardImage(Color.red);
         }
         DisableAllTiles();
+        boardIsWon = true;
     }
 
     // Disables all tiles on board
@@ -125,12 +131,17 @@ public class BoardController : MonoBehaviour
         }
     }
 
-    //Enables playable tiles on board
+    // Enables playable tiles on board
     public void EnableEmptyTiles(){
         foreach(TileController _tile in tileControllers){
             if(_tile.thisSprite.sprite.name == "UISprite"){
                 _tile.canUseTile = true;
             }
         }
+    }
+
+    // Changes the image of the board based on game rule circumstances
+    public void ChangeBoardImage(Color _color){
+        this.GetComponent<Image>().color = _color;
     }
 }
