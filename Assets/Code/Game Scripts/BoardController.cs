@@ -8,6 +8,7 @@ public class BoardController : MonoBehaviour
 {
     // REFERENCES
     private List<TileController> tileControllers = new List<TileController>();
+    private GameController gameController;
     private MainBoardController mainBoardController;
 
     // VARIABLES
@@ -19,6 +20,7 @@ public class BoardController : MonoBehaviour
 
     // FUNCTIONS
     private void Awake() {
+        gameController = GameController.Instance;
         mainBoardController = GetComponentInParent<MainBoardController>();
         foreach(Transform child in transform){
             tileControllers.Add(child.GetComponent<TileController>());
@@ -51,7 +53,7 @@ public class BoardController : MonoBehaviour
     // Checks rows for a winner
     private void CheckRows(bool _player){
         // Top row
-        if(tileControllers[1].thisSprite.sprite.name != "UISprite"){
+        if(tileControllers[1].thisSprite.sprite != gameController.grassSprite){
             if(tileControllers[0].thisSprite.sprite.name == tileControllers[1].thisSprite.sprite.name
             && tileControllers[1].thisSprite.sprite.name == tileControllers[2].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -59,7 +61,7 @@ public class BoardController : MonoBehaviour
         }
         
         // Middle row
-        if(tileControllers[4].thisSprite.sprite.name != "UISprite"){
+        if(tileControllers[4].thisSprite.sprite != gameController.grassSprite){
             if(tileControllers[3].thisSprite.sprite.name == tileControllers[4].thisSprite.sprite.name
             && tileControllers[4].thisSprite.sprite.name == tileControllers[5].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -67,7 +69,7 @@ public class BoardController : MonoBehaviour
         }
         
         // Bottom row
-        if(tileControllers[7].thisSprite.sprite.name != "UISprite"){
+        if(tileControllers[7].thisSprite.sprite != gameController.grassSprite){
             if(tileControllers[6].thisSprite.sprite.name == tileControllers[7].thisSprite.sprite.name
             && tileControllers[7].thisSprite.sprite.name == tileControllers[8].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -78,7 +80,7 @@ public class BoardController : MonoBehaviour
     // Checks columns for a winner
     private void CheckColumns(bool _player){
         // Left column
-        if(tileControllers[3].thisSprite.sprite.name != "UISprite"){
+        if(tileControllers[3].thisSprite.sprite != gameController.grassSprite){
             if(tileControllers[0].thisSprite.sprite.name == tileControllers[3].thisSprite.sprite.name
             && tileControllers[3].thisSprite.sprite.name == tileControllers[6].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -86,7 +88,7 @@ public class BoardController : MonoBehaviour
         }
 
         // Middle column
-        if(tileControllers[4].thisSprite.sprite.name != "UISprite"){
+        if(tileControllers[4].thisSprite.sprite != gameController.grassSprite){
             if(tileControllers[1].thisSprite.sprite.name == tileControllers[4].thisSprite.sprite.name
             && tileControllers[4].thisSprite.sprite.name == tileControllers[7].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -94,7 +96,7 @@ public class BoardController : MonoBehaviour
         }
 
         // Right column
-        if(tileControllers[5].thisSprite.sprite.name != "UISprite"){
+        if(tileControllers[5].thisSprite.sprite != gameController.grassSprite){
             if(tileControllers[2].thisSprite.sprite.name == tileControllers[5].thisSprite.sprite.name
             && tileControllers[5].thisSprite.sprite.name == tileControllers[8].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -104,7 +106,7 @@ public class BoardController : MonoBehaviour
 
     // Checks diagonals for a winner
     private void CheckDiagonals(bool _player){
-        if(tileControllers[4].thisSprite.sprite.name != "UISprite"){
+        if(tileControllers[4].thisSprite.sprite != gameController.grassSprite){
             // First diagonal
             if(tileControllers[0].thisSprite.sprite.name == tileControllers[4].thisSprite.sprite.name
             && tileControllers[4].thisSprite.sprite.name == tileControllers[8].thisSprite.sprite.name){
@@ -141,7 +143,7 @@ public class BoardController : MonoBehaviour
     // Enables playable tiles on board
     public void EnableEmptyTiles(){
         foreach(TileController _tile in tileControllers){
-            if(_tile.thisSprite.sprite.name == "UISprite"){
+            if(_tile.thisSprite.sprite == gameController.grassSprite){
                 _tile.canUseTile = true;
             }
         }

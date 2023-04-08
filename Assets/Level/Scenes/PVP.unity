@@ -161,7 +161,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22244687
 MonoBehaviour:
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -257,15 +257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &33302608
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +297,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33302610
 MonoBehaviour:
@@ -328,7 +321,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -400,15 +393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &39016831
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +433,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &39016833
 MonoBehaviour:
@@ -471,7 +457,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -543,15 +529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &54431883
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,8 +568,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &54431885
 MonoBehaviour:
@@ -614,7 +593,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -686,15 +665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &71593719
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +705,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &71593721
 MonoBehaviour:
@@ -757,7 +729,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -829,15 +801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &80735679
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,7 +841,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80735681
 MonoBehaviour:
@@ -900,7 +865,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -972,15 +937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &81685548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +977,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81685550
 MonoBehaviour:
@@ -1043,7 +1001,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1115,15 +1073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &84395838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,7 +1113,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &84395840
 MonoBehaviour:
@@ -1186,7 +1137,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1258,15 +1209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &120635932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1249,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &120635934
 MonoBehaviour:
@@ -1329,7 +1273,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1401,15 +1345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &165791055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,8 +1384,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_AnchoredPosition: {x: 0, y: -50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &165791057
 MonoBehaviour:
@@ -1472,7 +1409,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1544,15 +1481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &198063993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,8 +1520,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_AnchoredPosition: {x: -50, y: -50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &198063995
 MonoBehaviour:
@@ -1615,7 +1545,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1687,15 +1617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &202518642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1664,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: 0}
+  m_AnchoredPosition: {x: 180, y: 0}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &202518644
@@ -1757,15 +1680,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1794,8 +1717,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &263721761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,7 +1758,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263721763
 MonoBehaviour:
@@ -1858,7 +1782,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1930,15 +1854,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &275131408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,7 +1901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150}
+  m_AnchoredPosition: {x: 0, y: -180}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275131410
@@ -2000,15 +1917,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2037,8 +1954,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &307819582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,8 +1994,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_AnchoredPosition: {x: 50, y: 0}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &307819584
 MonoBehaviour:
@@ -2101,7 +2019,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2173,15 +2091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &328346548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,7 +2131,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328346550
 MonoBehaviour:
@@ -2244,7 +2155,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2316,15 +2227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &338264786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,7 +2267,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338264788
 MonoBehaviour:
@@ -2387,7 +2291,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2459,15 +2363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &351675858
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,7 +2403,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &351675860
 MonoBehaviour:
@@ -2530,7 +2427,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2602,15 +2499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &423524958
 GameObject:
   m_ObjectHideFlags: 0
@@ -2649,7 +2539,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &423524960
 MonoBehaviour:
@@ -2673,7 +2563,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2745,15 +2635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &427409399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,8 +2674,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427409401
 MonoBehaviour:
@@ -2816,7 +2699,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2888,15 +2771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &487784785
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,7 +2811,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &487784787
 MonoBehaviour:
@@ -2959,7 +2835,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3031,15 +2907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &505005467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,7 +2947,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505005469
 MonoBehaviour:
@@ -3102,7 +2971,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3174,15 +3043,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &526011405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,7 +3090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 150}
+  m_AnchoredPosition: {x: 0, y: 180}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526011407
@@ -3244,15 +3106,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3281,8 +3143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &564331903
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,7 +3184,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &564331905
 MonoBehaviour:
@@ -3345,7 +3208,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3417,15 +3280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &584202152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3464,7 +3320,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584202154
 MonoBehaviour:
@@ -3488,7 +3344,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3560,15 +3416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &636296779
 GameObject:
   m_ObjectHideFlags: 0
@@ -3607,7 +3456,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &636296781
 MonoBehaviour:
@@ -3631,7 +3480,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3703,15 +3552,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &652162438
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,7 +3592,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652162440
 MonoBehaviour:
@@ -3774,7 +3616,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3846,15 +3688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &747393611
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,7 +3728,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747393613
 MonoBehaviour:
@@ -3917,7 +3752,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3989,15 +3824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &765888595
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,7 +3864,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765888597
 MonoBehaviour:
@@ -4060,7 +3888,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4132,15 +3960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &772919646
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,8 +3999,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_AnchoredPosition: {x: 50, y: 50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772919648
 MonoBehaviour:
@@ -4203,7 +4024,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4275,15 +4096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &789025823
 GameObject:
   m_ObjectHideFlags: 0
@@ -4322,7 +4136,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789025825
 MonoBehaviour:
@@ -4346,7 +4160,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4418,15 +4232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &790407746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,7 +4272,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &790407748
 MonoBehaviour:
@@ -4489,7 +4296,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4561,15 +4368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &795331807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4608,7 +4408,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &795331809
 MonoBehaviour:
@@ -4632,7 +4432,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4704,15 +4504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &815974085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4751,7 +4544,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &815974087
 MonoBehaviour:
@@ -4775,7 +4568,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4847,15 +4640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &822432597
 GameObject:
   m_ObjectHideFlags: 0
@@ -4894,7 +4680,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &822432599
 MonoBehaviour:
@@ -4918,7 +4704,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4990,15 +4776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &868050294
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,7 +4816,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868050296
 MonoBehaviour:
@@ -5061,7 +4840,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -5133,15 +4912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &887428815
 GameObject:
   m_ObjectHideFlags: 0
@@ -5180,7 +4952,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &887428817
 MonoBehaviour:
@@ -5204,7 +4976,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -5276,15 +5048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &902558897
 GameObject:
   m_ObjectHideFlags: 0
@@ -5323,7 +5088,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &902558899
 MonoBehaviour:
@@ -5347,7 +5112,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -5419,15 +5184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &909440428
 GameObject:
   m_ObjectHideFlags: 0
@@ -5466,7 +5224,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &909440430
 MonoBehaviour:
@@ -5490,7 +5248,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -5562,15 +5320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &917469398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5609,7 +5360,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &917469400
 MonoBehaviour:
@@ -5633,7 +5384,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -5705,15 +5456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &924363008
 GameObject:
   m_ObjectHideFlags: 0
@@ -5759,7 +5503,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -150, y: -150}
+  m_AnchoredPosition: {x: -180, y: -180}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924363010
@@ -5775,15 +5519,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5812,8 +5556,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &926294820
 GameObject:
   m_ObjectHideFlags: 0
@@ -5859,7 +5604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -150, y: 150}
+  m_AnchoredPosition: {x: -180, y: 180}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926294822
@@ -5875,15 +5620,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.990566, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5912,8 +5657,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &951371534
 GameObject:
   m_ObjectHideFlags: 0
@@ -5952,7 +5698,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951371536
 MonoBehaviour:
@@ -5976,7 +5722,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6048,15 +5794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &952172304
 GameObject:
   m_ObjectHideFlags: 0
@@ -6095,7 +5834,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &952172306
 MonoBehaviour:
@@ -6119,7 +5858,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6191,15 +5930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &956002887
 GameObject:
   m_ObjectHideFlags: 0
@@ -6238,7 +5970,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &956002889
 MonoBehaviour:
@@ -6262,7 +5994,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6334,15 +6066,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &956918531
 GameObject:
   m_ObjectHideFlags: 0
@@ -6381,7 +6106,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &956918533
 MonoBehaviour:
@@ -6405,7 +6130,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6477,15 +6202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &961959772
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,7 +6242,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &961959774
 MonoBehaviour:
@@ -6548,7 +6266,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6620,15 +6338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &980990336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6667,7 +6378,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &980990338
 MonoBehaviour:
@@ -6691,7 +6402,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6763,15 +6474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &985014631
 GameObject:
   m_ObjectHideFlags: 0
@@ -6810,7 +6514,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &985014633
 MonoBehaviour:
@@ -6834,7 +6538,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6906,15 +6610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &986832111
 GameObject:
   m_ObjectHideFlags: 0
@@ -6953,7 +6650,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986832113
 MonoBehaviour:
@@ -6977,7 +6674,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -7049,15 +6746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1077899721
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,7 +6793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 180, y: 180}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077899723
@@ -7119,15 +6809,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7156,8 +6846,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &1081694395
 GameObject:
   m_ObjectHideFlags: 0
@@ -7303,15 +6994,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7340,8 +7031,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &1129971221
 GameObject:
   m_ObjectHideFlags: 0
@@ -7380,7 +7072,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1129971223
 MonoBehaviour:
@@ -7404,7 +7096,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -7476,15 +7168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1137562619
 GameObject:
   m_ObjectHideFlags: 0
@@ -7523,7 +7208,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137562621
 MonoBehaviour:
@@ -7547,7 +7232,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -7619,15 +7304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1183477023
 GameObject:
   m_ObjectHideFlags: 0
@@ -7666,7 +7344,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183477025
 MonoBehaviour:
@@ -7690,7 +7368,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -7762,15 +7440,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
+--- !u!1 &1190326202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1190326203}
+  - component: {fileID: 1190326205}
+  - component: {fileID: 1190326204}
+  m_Layer: 5
+  m_Name: BackgroundArt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1190326203
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190326202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1648544390}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1190326204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190326202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1190326205
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190326202}
+  m_CullTransparentMesh: 1
 --- !u!1 &1193447210
 GameObject:
   m_ObjectHideFlags: 0
@@ -7809,7 +7556,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193447212
 MonoBehaviour:
@@ -7833,7 +7580,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -7905,15 +7652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1196167849
 GameObject:
   m_ObjectHideFlags: 0
@@ -7959,7 +7699,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 0}
+  m_AnchoredPosition: {x: -180, y: 0}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196167851
@@ -7975,15 +7715,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8012,8 +7752,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &1234385973
 GameObject:
   m_ObjectHideFlags: 0
@@ -8052,7 +7793,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1234385975
 MonoBehaviour:
@@ -8076,7 +7817,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8148,15 +7889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1251242980
 GameObject:
   m_ObjectHideFlags: 0
@@ -8195,7 +7929,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1251242982
 MonoBehaviour:
@@ -8219,7 +7953,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8291,15 +8025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1272598991
 GameObject:
   m_ObjectHideFlags: 0
@@ -8338,7 +8065,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272598993
 MonoBehaviour:
@@ -8362,7 +8089,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8434,15 +8161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1282270815
 GameObject:
   m_ObjectHideFlags: 0
@@ -8481,7 +8201,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282270817
 MonoBehaviour:
@@ -8505,7 +8225,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8577,15 +8297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1286496610
 GameObject:
   m_ObjectHideFlags: 0
@@ -8624,7 +8337,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286496612
 MonoBehaviour:
@@ -8648,7 +8361,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8720,15 +8433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1324470332
 GameObject:
   m_ObjectHideFlags: 0
@@ -8811,7 +8517,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328196827
 MonoBehaviour:
@@ -8835,7 +8541,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8907,15 +8613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1348552022
 GameObject:
   m_ObjectHideFlags: 0
@@ -8954,7 +8653,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1348552024
 MonoBehaviour:
@@ -8978,7 +8677,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9050,15 +8749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1349336333
 GameObject:
   m_ObjectHideFlags: 0
@@ -9097,7 +8789,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349336335
 MonoBehaviour:
@@ -9121,7 +8813,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9193,15 +8885,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1356311905
 GameObject:
   m_ObjectHideFlags: 0
@@ -9240,7 +8925,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1356311907
 MonoBehaviour:
@@ -9264,7 +8949,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9336,15 +9021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1392524655
 GameObject:
   m_ObjectHideFlags: 0
@@ -9383,7 +9061,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1392524657
 MonoBehaviour:
@@ -9407,7 +9085,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9479,15 +9157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1465249904
 GameObject:
   m_ObjectHideFlags: 0
@@ -9526,7 +9197,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465249906
 MonoBehaviour:
@@ -9550,7 +9221,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9622,15 +9293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1545055581
 GameObject:
   m_ObjectHideFlags: 0
@@ -9669,7 +9333,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1545055583
 MonoBehaviour:
@@ -9693,7 +9357,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9765,15 +9429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1554641761
 GameObject:
   m_ObjectHideFlags: 0
@@ -9812,7 +9469,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1554641763
 MonoBehaviour:
@@ -9836,7 +9493,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9908,15 +9565,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1563578665
 GameObject:
   m_ObjectHideFlags: 0
@@ -9955,7 +9605,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563578667
 MonoBehaviour:
@@ -9979,7 +9629,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -10051,15 +9701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1591047175
 GameObject:
   m_ObjectHideFlags: 0
@@ -10098,7 +9741,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1591047177
 MonoBehaviour:
@@ -10122,7 +9765,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -10194,15 +9837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1646232335
 GameObject:
   m_ObjectHideFlags: 0
@@ -10241,7 +9877,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1646232337
 MonoBehaviour:
@@ -10265,7 +9901,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -10337,15 +9973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1648544386
 GameObject:
   m_ObjectHideFlags: 0
@@ -10438,6 +10067,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1190326203}
   - {fileID: 2025471462}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -10485,7 +10115,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678943792
 MonoBehaviour:
@@ -10509,7 +10139,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -10581,15 +10211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1750523482
 GameObject:
   m_ObjectHideFlags: 0
@@ -10628,7 +10251,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1750523484
 MonoBehaviour:
@@ -10652,7 +10275,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -10724,15 +10347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1790144114
 GameObject:
   m_ObjectHideFlags: 0
@@ -10771,7 +10387,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1790144116
 MonoBehaviour:
@@ -10795,7 +10411,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -10867,15 +10483,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1803612201
 GameObject:
   m_ObjectHideFlags: 0
@@ -10982,7 +10591,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811147726
 MonoBehaviour:
@@ -11006,7 +10615,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -11078,15 +10687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1812697782
 GameObject:
   m_ObjectHideFlags: 0
@@ -11124,8 +10726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_AnchoredPosition: {x: -50, y: 50}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812697784
 MonoBehaviour:
@@ -11149,7 +10751,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -11221,15 +10823,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1865631082
 GameObject:
   m_ObjectHideFlags: 0
@@ -11268,7 +10863,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1865631084
 MonoBehaviour:
@@ -11292,7 +10887,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -11364,15 +10959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1868957749
 GameObject:
   m_ObjectHideFlags: 0
@@ -11411,7 +10999,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868957751
 MonoBehaviour:
@@ -11435,7 +11023,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -11507,15 +11095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1869996075
 GameObject:
   m_ObjectHideFlags: 0
@@ -11554,7 +11135,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869996077
 MonoBehaviour:
@@ -11578,7 +11159,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -11650,15 +11231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1921913310
 GameObject:
   m_ObjectHideFlags: 0
@@ -11697,7 +11271,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 45, y: 45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1921913312
 MonoBehaviour:
@@ -11721,7 +11295,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -11793,15 +11367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1982123855
 GameObject:
   m_ObjectHideFlags: 0
@@ -11839,8 +11406,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_AnchoredPosition: {x: -50, y: 0}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1982123857
 MonoBehaviour:
@@ -11864,7 +11431,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.9104993, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -11936,15 +11503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1987954684
 GameObject:
   m_ObjectHideFlags: 0
@@ -11983,7 +11543,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1987954686
 MonoBehaviour:
@@ -12007,7 +11567,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -12079,15 +11639,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &1989918910
 GameObject:
   m_ObjectHideFlags: 0
@@ -12126,7 +11679,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1989918912
 MonoBehaviour:
@@ -12150,7 +11703,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -12222,15 +11775,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &2025471461
 GameObject:
   m_ObjectHideFlags: 0
@@ -12272,12 +11818,12 @@ RectTransform:
   - {fileID: 526011406}
   - {fileID: 926294821}
   m_Father: {fileID: 1648544390}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 1000}
+  m_SizeDelta: {x: 1080, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025471463
 MonoBehaviour:
@@ -12292,15 +11838,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a60be079949793bdebe6b510c442eb59, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12329,6 +11875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5701fd8c032ce433bf52282f5c0d978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boardControllers: []
+  boardsComplete: 0
 --- !u!1 &2027484773
 GameObject:
   m_ObjectHideFlags: 0
@@ -12374,7 +11922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -150}
+  m_AnchoredPosition: {x: 180, y: -180}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027484775
@@ -12390,15 +11938,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bb33d140116837cbb8bdae2b7740d753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12427,8 +11975,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0ca5154e1d2dcb3a264659aa84bed0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileControllers: []
   tilesPlayed: 0
+  boardIsWon: 0
+  thisBoardSprite: {fileID: 0}
 --- !u!1 &2049300530
 GameObject:
   m_ObjectHideFlags: 0
@@ -12467,7 +12016,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2049300532
 MonoBehaviour:
@@ -12491,7 +12040,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -12563,15 +12112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &2073896673
 GameObject:
   m_ObjectHideFlags: 0
@@ -12628,6 +12170,9 @@ MonoBehaviour:
   - {fileID: 1077899725}
   - {fileID: 526011409}
   - {fileID: 926294824}
+  grassSprite: {fileID: 0}
+  knightSprite: {fileID: 0}
+  ogreSprite: {fileID: 0}
 --- !u!114 &2073896678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12679,7 +12224,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081592180
 MonoBehaviour:
@@ -12703,7 +12248,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.99178326, g: 1, b: 0, a: 0.5372549}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -12775,15 +12320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &2095765631
 GameObject:
   m_ObjectHideFlags: 0
@@ -12822,7 +12360,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 45, y: 0}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2095765633
 MonoBehaviour:
@@ -12846,7 +12384,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -12918,15 +12456,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}
 --- !u!1 &2110506460
 GameObject:
   m_ObjectHideFlags: 0
@@ -12965,7 +12496,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -45, y: -45}
-  m_SizeDelta: {x: 90, y: 90}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2110506462
 MonoBehaviour:
@@ -12989,7 +12520,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -13061,12 +12592,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6516aa48d756ec5eab70dfa2b2143684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 0}
-  turnController: {fileID: 0}
   canUseTile: 0
-  locationOnMainBoard: 
-  locationOnBoard: 
-  tileNumber: 0
   thisSprite: {fileID: 0}
-  knightSprite: {fileID: 0}
-  orcSprite: {fileID: 0}

@@ -39,6 +39,9 @@ public class TileController : MonoBehaviour
         thisSprite = thisButton.GetComponent<Image>();
         AssignTileLocations();
 
+        // Sets the sprite of the tile to grass
+        thisSprite.sprite = gameController.grassSprite;
+
         // Sets the onClick event for the tile
         thisButton.onClick.AddListener(OnTileClick);
     }
