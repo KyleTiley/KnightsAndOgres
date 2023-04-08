@@ -14,12 +14,19 @@ public class BoardController : MonoBehaviour
     public int tilesPlayed;
     public bool boardIsWon;
 
+    private GameObject thisBoard;
+    public Image thisBoardSprite; 
+
     // FUNCTIONS
     private void Awake() {
         mainBoardController = GetComponentInParent<MainBoardController>();
         foreach(Transform child in transform){
             tileControllers.Add(child.GetComponent<TileController>());
         }
+
+        // Gets components of this board
+        thisBoard = this.gameObject;
+        thisBoardSprite = thisBoard.GetComponent<Image>();
 
         // Sets board variables to defaults
         tilesPlayed = 0;
@@ -142,6 +149,6 @@ public class BoardController : MonoBehaviour
 
     // Changes the image of the board based on game rule circumstances
     public void ChangeBoardImage(Color _color){
-        this.GetComponent<Image>().color = _color;
+        thisBoardSprite.color = _color;
     }
 }

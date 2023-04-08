@@ -7,14 +7,15 @@ public class TileController : MonoBehaviour
 {
     // REFERENCES
     private GameController gameController;
+    private TurnController turnController;
+    private BoardController boardController;
+    private MainBoardController mainBoardController;
 
     // VARIABLES FOR TILE FUNCTIONALITY
     private Button thisButton;
-    private TurnController turnController;
-    private BoardController boardController;
     public bool canUseTile;
 
-    // VARIABLES FOR TILE LOCATION
+    // VARIABLES FOR TILE LOCATION (mainly for debugging purposes)
     private string locationOnMainBoard;
     private string locationOnBoard;
     private char tileNumber;
@@ -28,6 +29,7 @@ public class TileController : MonoBehaviour
         gameController = GameController.Instance;
         turnController = gameController.turnController;
         boardController = GetComponentInParent<BoardController>();
+        mainBoardController = transform.parent.GetComponentInParent<MainBoardController>();
 
         // Sets tile to usable
         canUseTile = true;
@@ -76,6 +78,9 @@ public class TileController : MonoBehaviour
             
             // Calls to choose the next board
             boardController.ChooseNextBoard(tileNumber);
+
+            // Checks if the game is won
+            mainBoardController.CheckGameWinner(turnController.isPlayersTurn);
 
             // Calls to switch players
             turnController.SwitchPlayers();
