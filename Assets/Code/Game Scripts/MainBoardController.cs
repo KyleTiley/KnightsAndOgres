@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MainBoardController : MonoBehaviour
 {
     // REFERENCES
+    private GameController gameController;
     public List<BoardController> boardControllers = new List<BoardController>();
 
     // VARIABLES
@@ -13,6 +14,7 @@ public class MainBoardController : MonoBehaviour
 
     // FUNCTIONS
     private void Awake() {
+        gameController = GameController.Instance;
         foreach(Transform child in transform){
             boardControllers.Add(child.GetComponent<BoardController>());
         }
@@ -26,7 +28,7 @@ public class MainBoardController : MonoBehaviour
                 // Sets all empty tiles in uncomplete boards to usable
                 if(!board.boardIsWon){
                     board.EnableEmptyTiles();
-                    board.GetComponent<Image>().color = Color.yellow;
+                    board.HighlightBoard();
                 }
                 // Makes sure complete boards are fully disabled
                 else{
@@ -41,13 +43,13 @@ public class MainBoardController : MonoBehaviour
                 if(board != boardControllers[_nextBoard]){
                     board.DisableAllTiles();
                     if(!board.boardIsWon){
-                        board.GetComponent<Image>().color = Color.green;
+                        board.GetComponent<Image>().color = gameController.defaultBoardColour;
                     }
                 }
                 // Enables the available tiles in the next board
                 else{
                     board.EnableEmptyTiles();
-                    board.ChangeBoardImage(Color.yellow);
+                    board.HighlightBoard();
                 }
             }
         }
@@ -63,7 +65,7 @@ public class MainBoardController : MonoBehaviour
     // Checks the main rows for a winner
     private void CheckMainRows(bool _player){
         // Top row
-        if(boardControllers[1].thisBoardSprite.color != Color.green && boardControllers[1].thisBoardSprite.color != Color.yellow){
+        if(boardControllers[1].thisBoardSprite.color != gameController.defaultBoardColour && boardControllers[1].thisBoardSprite.color != gameController.highlightColour){
             if(boardControllers[0].thisBoardSprite.color == boardControllers[1].thisBoardSprite.color
             && boardControllers[1].thisBoardSprite.color == boardControllers[2].thisBoardSprite.color){
                 SetGameWinner(_player);
@@ -71,7 +73,7 @@ public class MainBoardController : MonoBehaviour
         }
         
         // Middle row
-        if(boardControllers[4].thisBoardSprite.color != Color.green && boardControllers[4].thisBoardSprite.color != Color.yellow){
+        if(boardControllers[4].thisBoardSprite.color != gameController.defaultBoardColour && boardControllers[4].thisBoardSprite.color != gameController.highlightColour){
             if(boardControllers[3].thisBoardSprite.color == boardControllers[4].thisBoardSprite.color
             && boardControllers[4].thisBoardSprite.color == boardControllers[5].thisBoardSprite.color){
                 SetGameWinner(_player);
@@ -79,7 +81,7 @@ public class MainBoardController : MonoBehaviour
         }
         
         // Bottom row
-        if(boardControllers[7].thisBoardSprite.color != Color.green && boardControllers[7].thisBoardSprite.color != Color.yellow){
+        if(boardControllers[7].thisBoardSprite.color != gameController.defaultBoardColour && boardControllers[7].thisBoardSprite.color != gameController.highlightColour){
             if(boardControllers[6].thisBoardSprite.color == boardControllers[7].thisBoardSprite.color
             && boardControllers[7].thisBoardSprite.color == boardControllers[8].thisBoardSprite.color){
                 SetGameWinner(_player);
@@ -90,7 +92,7 @@ public class MainBoardController : MonoBehaviour
     // Checks the main columns for a winner
     private void CheckMainColumns(bool _player){
         // Left column
-        if(boardControllers[3].thisBoardSprite.color != Color.green && boardControllers[3].thisBoardSprite.color != Color.yellow){
+        if(boardControllers[3].thisBoardSprite.color != gameController.defaultBoardColour && boardControllers[3].thisBoardSprite.color != gameController.highlightColour){
             if(boardControllers[0].thisBoardSprite.color == boardControllers[3].thisBoardSprite.color
             && boardControllers[3].thisBoardSprite.color == boardControllers[6].thisBoardSprite.color){
                 SetGameWinner(_player);
@@ -98,7 +100,7 @@ public class MainBoardController : MonoBehaviour
         }
         
         // Middle column
-        if(boardControllers[4].thisBoardSprite.color != Color.green && boardControllers[4].thisBoardSprite.color != Color.yellow){
+        if(boardControllers[4].thisBoardSprite.color != gameController.defaultBoardColour && boardControllers[4].thisBoardSprite.color != gameController.highlightColour){
             if(boardControllers[1].thisBoardSprite.color == boardControllers[4].thisBoardSprite.color
             && boardControllers[4].thisBoardSprite.color == boardControllers[7].thisBoardSprite.color){
                 SetGameWinner(_player);
@@ -106,7 +108,7 @@ public class MainBoardController : MonoBehaviour
         }
         
         // Right column
-        if(boardControllers[5].thisBoardSprite.color != Color.green && boardControllers[5].thisBoardSprite.color != Color.yellow){
+        if(boardControllers[5].thisBoardSprite.color != gameController.defaultBoardColour && boardControllers[5].thisBoardSprite.color != gameController.highlightColour){
             if(boardControllers[2].thisBoardSprite.color == boardControllers[5].thisBoardSprite.color
             && boardControllers[5].thisBoardSprite.color == boardControllers[8].thisBoardSprite.color){
                 SetGameWinner(_player);
@@ -117,7 +119,7 @@ public class MainBoardController : MonoBehaviour
     // Checks the main diagonals for a winner
     private void CheckMainDiagonals(bool _player){
         // First diagonal
-        if(boardControllers[4].thisBoardSprite.color != Color.green && boardControllers[4].thisBoardSprite.color != Color.yellow){
+        if(boardControllers[4].thisBoardSprite.color != gameController.defaultBoardColour && boardControllers[4].thisBoardSprite.color != gameController.highlightColour){
             if(boardControllers[0].thisBoardSprite.color == boardControllers[4].thisBoardSprite.color
             && boardControllers[4].thisBoardSprite.color == boardControllers[8].thisBoardSprite.color){
                 SetGameWinner(_player);
@@ -125,7 +127,7 @@ public class MainBoardController : MonoBehaviour
         }
         
         // Second diagonal
-        if(boardControllers[4].thisBoardSprite.color != Color.green && boardControllers[4].thisBoardSprite.color != Color.yellow){
+        if(boardControllers[4].thisBoardSprite.color != gameController.defaultBoardColour && boardControllers[4].thisBoardSprite.color != gameController.highlightColour){
             if(boardControllers[2].thisBoardSprite.color == boardControllers[4].thisBoardSprite.color
             && boardControllers[4].thisBoardSprite.color == boardControllers[6].thisBoardSprite.color){
                 SetGameWinner(_player);
@@ -140,8 +142,8 @@ public class MainBoardController : MonoBehaviour
             board.DisableAllTiles();
 
             // Changes next boards back to default
-            if(board.thisBoardSprite.color == Color.yellow){
-                board.ChangeBoardImage(Color.green);
+            if(board.thisBoardSprite.color == gameController.highlightColour){
+                board.HighlightBoard();
             }
 
             // Changes the image of the main board based on the winning player

@@ -15,8 +15,9 @@ public class BoardController : MonoBehaviour
     public int tilesPlayed;
     public bool boardIsWon;
 
+    // VARIABLES FOR BOARD SPRITE
     private GameObject thisBoard;
-    public Image thisBoardSprite; 
+    public Image thisBoardSprite;
 
     // FUNCTIONS
     private void Awake() {
@@ -33,7 +34,7 @@ public class BoardController : MonoBehaviour
         // Sets board variables to defaults
         tilesPlayed = 0;
         boardIsWon = false;
-        ChangeBoardImage(Color.green);
+        ChangeBoardImage(gameController.highlightColour);
     }
 
     // Checks all possibilities for a won board
@@ -150,7 +151,12 @@ public class BoardController : MonoBehaviour
     }
 
     // Changes the image of the board based on game rule circumstances
-    public void ChangeBoardImage(Color _color){
+    public void ChangeBoardImage(Color32 _color){
         thisBoardSprite.color = _color;
+    }
+
+    // Highlights the boards that the player can play on
+    public void HighlightBoard(){
+        thisBoardSprite.color = gameController.highlightColour;
     }
 }
