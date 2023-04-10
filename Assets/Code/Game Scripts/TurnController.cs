@@ -8,7 +8,7 @@ public class TurnController : MonoBehaviour
     private GameController gameController;
 
     // VARIABLES
-    // Denotes the active player, true: player 1, false: player 2
+    // Denotes the active player, true: player 1 knight, false: player 2 ogre
     public bool isPlayersTurn;
 
     //Player highlight colours
@@ -20,7 +20,7 @@ public class TurnController : MonoBehaviour
         isPlayersTurn = Random.Range(0,2) == 1;
         gameController = GameController.Instance;
 
-        if(!isPlayersTurn){
+        if(isPlayersTurn){
             gameController.highlightColour = knightHighlight;
         }
         else{
@@ -31,8 +31,10 @@ public class TurnController : MonoBehaviour
     // Switches from one player to the other
     public void SwitchPlayers(){
         isPlayersTurn = !isPlayersTurn;
+    }
 
-        //Changes highlight colour to show which player's turn it is
+    // Changes highlight colour to show which player's turn it is
+    public void SwitchColours(){
         if(!isPlayersTurn){
             gameController.highlightColour = knightHighlight;
         }

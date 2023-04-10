@@ -34,7 +34,9 @@ public class BoardController : MonoBehaviour
         // Sets board variables to defaults
         tilesPlayed = 0;
         boardIsWon = false;
-        ChangeBoardImage(gameController.highlightColour);
+
+        // Hightlights the board as the colour of the starting player
+        HighlightBoard();
     }
 
     // Checks all possibilities for a won board
@@ -125,10 +127,12 @@ public class BoardController : MonoBehaviour
     // Sets the winner of this board
     private void SetBoardWinner(bool _winningPlayer){
         if(_winningPlayer){
-            ChangeBoardImage(Color.blue);
+            Debug.Log("KNIGHT WINS");
+            HighlightBoard();
         }
         else{
-            ChangeBoardImage(Color.red);
+            Debug.Log("OGRE WINS");
+            HighlightBoard();
         }
         DisableAllTiles();
         boardIsWon = true;
@@ -151,9 +155,9 @@ public class BoardController : MonoBehaviour
     }
 
     // Changes the image of the board based on game rule circumstances
-    public void ChangeBoardImage(Color32 _color){
-        thisBoardSprite.color = _color;
-    }
+    // public void ChangeBoardImage(Color32 _color){
+    //     thisBoardSprite.color = _color;
+    // }
 
     // Highlights the boards that the player can play on
     public void HighlightBoard(){

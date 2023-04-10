@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
     // REFERENCES FOR GLOBAL ACCESS
     public static GameController Instance { get; private set; }
     public TurnController turnController;
-    public List<BoardController> boardControllers = new List<BoardController>();    // is this needed???
+    // public List<BoardController> boardControllers = new List<BoardController>();    // is this needed???
 
     // IMAGES FOR TILES
     public Sprite grassSprite;

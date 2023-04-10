@@ -11,6 +11,7 @@ public class MainBoardController : MonoBehaviour
 
     // VARIABLES
     public int boardsComplete;
+    private int nextPlayableBoard;
 
     // FUNCTIONS
     private void Awake() {
@@ -22,8 +23,11 @@ public class MainBoardController : MonoBehaviour
 
     // Sets the next playable board/s based on the game rules
     public void SetPlayableBoard(int _nextBoard){
+        // Sets next playable board
+        nextPlayableBoard = _nextBoard;
+
         // Checks if the next board is already won, then the player can play on any available board
-        if(boardControllers[_nextBoard].boardIsWon){
+        if(boardControllers[nextPlayableBoard].boardIsWon){
             foreach(BoardController board in boardControllers){
                 // Sets all empty tiles in uncomplete boards to usable
                 if(!board.boardIsWon){
@@ -40,7 +44,7 @@ public class MainBoardController : MonoBehaviour
         else{
             foreach(BoardController board in boardControllers){
                 // Disables tiles in boards that are not the next board
-                if(board != boardControllers[_nextBoard]){
+                if(board != boardControllers[nextPlayableBoard]){
                     board.DisableAllTiles();
                     if(!board.boardIsWon){
                         board.GetComponent<Image>().color = gameController.defaultBoardColour;
@@ -141,18 +145,20 @@ public class MainBoardController : MonoBehaviour
             // Disables all tiles in the game since it is over
             board.DisableAllTiles();
 
+            // ??? this might be the problem with setting board colour at the end of game
             // Changes next boards back to default
-            if(board.thisBoardSprite.color == gameController.highlightColour){
-                board.HighlightBoard();
+            if(board == boardControllers[nextPlayableBoard]){
+                board.thisBoardSprite.color = gameController.defaultBoardColour;
             }
-
+            
+            // ??? this needs to be fixed based on winner 
             // Changes the image of the main board based on the winning player
-            if(_winningPlayer){
-                this.GetComponent<Image>().color = Color.blue;
-            }
-            else{
-                this.GetComponent<Image>().color = Color.red;
-            }
+            // if(_winningPlayer){
+            //     this.GetComponent<Image>().color = gameController.highlightColour;
+            // }
+            // else{
+            //     this.GetComponent<Image>().color = gameController.highlightColour;
+            // }
         }
     }
 }

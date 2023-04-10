@@ -78,6 +78,9 @@ public class TileController : MonoBehaviour
                 // Calls to check if the board is won
                 boardController.CheckBoardWinner(turnController.isPlayersTurn);
             }
+
+            // Calls to switch colours befoer choosing the next board
+            turnController.SwitchColours();
             
             // Calls to choose the next board
             boardController.ChooseNextBoard(tileNumber);
