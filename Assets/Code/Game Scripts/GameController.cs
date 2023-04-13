@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
     // REFERENCES FOR GLOBAL ACCESS
     public static GameController Instance { get; private set; }
     public TurnController turnController;
+    public TextMeshProUGUI winnerText;
     // public List<BoardController> boardControllers = new List<BoardController>();    // is this needed???
 
     // IMAGES FOR TILES
@@ -26,6 +28,9 @@ public class GameController : MonoBehaviour
     //FUNCTIONS
     // Called before any other script to create singleton
     private void Awake() {
+        // Sets UI to defaults
+        winnerText.text = " ";
+        
         // Sets default grass sprite for each tile
         grassSprite = Resources.Load<Sprite>("Art/GrassTile");
         defaultBoardColour = new Color32(0, 0, 0, 0);

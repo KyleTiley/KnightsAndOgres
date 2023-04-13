@@ -161,13 +161,15 @@ public class BoardController : MonoBehaviour
         }
     }
 
-    // Changes the image of the board based on game rule circumstances
-    // public void ChangeBoardImage(Color32 _color){
-    //     thisBoardSprite.color = _color;
-    // }
-
     // Highlights the boards that the player can play on
     public void HighlightBoard(){
         thisBoardSprite.color = gameController.highlightColour;
+    }
+
+    //Checks if the board is full and does not have a winner
+    public void CheckForTie(){
+        if(tilesPlayed >= 9 && thisBoardSprite.sprite.name == "UISprite"){
+            Debug.Log("TIE");
+        }
     }
 }

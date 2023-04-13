@@ -29,4 +29,9 @@ public class SceneChanger : MonoBehaviour
     public void HardAI(){
         SceneManager.LoadScene(4);
     }
+
+    // Quits game
+    public void QuitGame(){
+        Application.Quit();
+    }
 }
