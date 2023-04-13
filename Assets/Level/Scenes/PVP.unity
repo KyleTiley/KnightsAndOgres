@@ -12160,20 +12160,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnController: {fileID: 2073896678}
-  boardControllers:
-  - {fileID: 2027484777}
-  - {fileID: 275131412}
-  - {fileID: 924363012}
-  - {fileID: 202518646}
-  - {fileID: 1105536619}
-  - {fileID: 1196167853}
-  - {fileID: 1077899725}
-  - {fileID: 526011409}
-  - {fileID: 926294824}
   grassSprite: {fileID: 0}
   knightSprite: {fileID: 0}
   ogreSprite: {fileID: 0}
+  castleSprite: {fileID: 0}
+  hutSprite: {fileID: 0}
   highlightColour:
+    serializedVersion: 2
+    rgba: 0
+  defaultBoardColour:
+    serializedVersion: 2
+    rgba: 0
+  boardWinColour:
     serializedVersion: 2
     rgba: 0
 --- !u!114 &2073896678

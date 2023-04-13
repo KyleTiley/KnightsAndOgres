@@ -12,11 +12,15 @@ public class TurnController : MonoBehaviour
     public bool isPlayersTurn;
 
     //Player highlight colours
-    private Color32 knightHighlight = new Color32(88, 174, 238, 150);
-    private Color32 OgreHighlight = new Color32(234, 175, 77, 150);
+    private Color32 knightHighlight;
+    private Color32 OgreHighlight;
 
     // FUNCTIONS
     private void Awake(){
+        // Player colour declarations
+        knightHighlight = new Color32(149, 105, 200, 150);
+        OgreHighlight = new Color32(234, 175, 77, 150);
+
         isPlayersTurn = Random.Range(0,2) == 1;
         gameController = GameController.Instance;
 

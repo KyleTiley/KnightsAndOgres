@@ -127,14 +127,14 @@ public class BoardController : MonoBehaviour
     // Sets the winner of this board
     private void SetBoardWinner(bool _winningPlayer){
         if(_winningPlayer){
-            Debug.Log("KNIGHT WINS");
-            HighlightBoard();
+            thisBoardSprite.sprite = gameController.castleSprite;
         }
         else{
-            Debug.Log("OGRE WINS");
-            HighlightBoard();
+            thisBoardSprite.sprite = gameController.hutSprite;
         }
-        DisableAllTiles();
+        thisBoardSprite.color= gameController.boardWinColour;
+        HideAllTiles();
+        //DisableAllTiles();    not needed???
         boardIsWon = true;
     }
 
@@ -142,6 +142,13 @@ public class BoardController : MonoBehaviour
     public void DisableAllTiles(){
         foreach(TileController _tile in tileControllers){
             _tile.canUseTile = false;
+        }
+    }
+
+    // Hides all tiles on board
+    public void HideAllTiles(){
+        foreach(Transform child in transform){
+            child.gameObject.SetActive(false);
         }
     }
 
