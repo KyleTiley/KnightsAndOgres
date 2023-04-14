@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PVP.unity
     guid: 75e29884cb11e19e9b98c1f538a8664b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EasyAI.unity
     guid: 8335cd9525493a0609e742b98eab7f04
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MediumAI.unity
     guid: c224ea4e6feb52a1084e5dd47723eabc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HardAI.unity
     guid: 7a091156da04e280c8027c044dd627e2
   m_configObjects: {}
