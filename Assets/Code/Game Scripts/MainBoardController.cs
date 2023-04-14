@@ -10,7 +10,6 @@ public class MainBoardController : MonoBehaviour
     public List<BoardController> boardControllers = new List<BoardController>();
 
     // VARIABLES
-    public int boardsComplete;
     private int nextPlayableBoard;
 
     // FUNCTIONS
@@ -152,10 +151,10 @@ public class MainBoardController : MonoBehaviour
 
             //Displays text based on the winning player
             if(_winningPlayer){
-                gameController.winnerText.text = " Knights win";
+                gameController.winnerText.text = " Knights Win!";
             }
             else{
-                gameController.winnerText.text = " Ogres win";
+                gameController.winnerText.text = " Ogres Win!";
             }
             
         }

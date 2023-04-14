@@ -9,7 +9,6 @@ public class GameController : MonoBehaviour
     public static GameController Instance { get; private set; }
     public TurnController turnController;
     public TextMeshProUGUI winnerText;
-    // public List<BoardController> boardControllers = new List<BoardController>();    // is this needed???
 
     // IMAGES FOR TILES
     public Sprite grassSprite;
@@ -29,7 +28,7 @@ public class GameController : MonoBehaviour
     // Called before any other script to create singleton
     private void Awake() {
         // Sets UI to defaults
-        winnerText.text = " ";
+        winnerText.text = "Battle!";
         
         // Sets default grass sprite for each tile
         grassSprite = Resources.Load<Sprite>("Art/GrassTile");

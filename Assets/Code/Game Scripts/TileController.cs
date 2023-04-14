@@ -31,19 +31,25 @@ public class TileController : MonoBehaviour
         boardController = GetComponentInParent<BoardController>();
         mainBoardController = transform.parent.GetComponentInParent<MainBoardController>();
 
-        // Sets tile to usable
-        canUseTile = true;
-
         // Gets components of this tile button
         thisButton = this.GetComponent<Button>();
         thisSprite = thisButton.GetComponent<Image>();
         AssignTileLocations();
 
-        // Sets the sprite of the tile to grass
-        thisSprite.sprite = gameController.grassSprite;
-
         // Sets the onClick event for the tile
         thisButton.onClick.AddListener(OnTileClick);
+
+        // Sets tile to default at the start of game
+        ResetTile();
+    }
+
+    // Resets the tile to default state
+    public void ResetTile(){
+        // Sets tile to usable
+        canUseTile = true;
+
+        // Sets the sprite of the tile to grass
+        thisSprite.sprite = gameController.grassSprite;
     }
 
     // Used to assign location properties to the tile
@@ -73,6 +79,7 @@ public class TileController : MonoBehaviour
                 thisSprite.sprite = gameController.ogreSprite;
             }
 
+            // Checks for a tie in the board before doing anything else
             boardController.CheckForTie();
 
             // Checks if at least 3 tiles have been played, as that is the minimum to win a board
@@ -93,9 +100,5 @@ public class TileController : MonoBehaviour
             // Calls to switch players
             turnController.SwitchPlayers();
         }
-    }
-
-    private void OnMouseOver() {
-        Debug.Log("HOVER");
     }
 }

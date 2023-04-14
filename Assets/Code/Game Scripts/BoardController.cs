@@ -134,7 +134,6 @@ public class BoardController : MonoBehaviour
         }
         thisBoardSprite.color= gameController.boardWinColour;
         HideAllTiles();
-        //DisableAllTiles();    not needed???
         boardIsWon = true;
     }
 
@@ -169,7 +168,10 @@ public class BoardController : MonoBehaviour
     //Checks if the board is full and does not have a winner
     public void CheckForTie(){
         if(tilesPlayed >= 9 && thisBoardSprite.sprite.name == "UISprite"){
-            Debug.Log("TIE");
+            foreach(TileController _tile in tileControllers){
+                _tile.ResetTile();
+            }
+            tilesPlayed = 0;
         }
     }
 }
