@@ -7,7 +7,7 @@ using System;
 public class BoardController : MonoBehaviour
 {
     // REFERENCES
-    private List<TileController> tileControllers = new List<TileController>();
+    public List<TileController> tileControllers = new List<TileController>();
     private GameController gameController;
     private MainBoardController mainBoardController;
 

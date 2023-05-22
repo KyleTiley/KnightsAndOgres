@@ -63,7 +63,7 @@ public class TileController : MonoBehaviour
     }
 
     // Called when this tile is clicked
-    private void OnTileClick(){
+    public void OnTileClick(){
         // Checks if tile is not disabled or already used
         if(canUseTile){
             // Disables use of this tile

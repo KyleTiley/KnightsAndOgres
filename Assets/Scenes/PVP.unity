@@ -12609,6 +12609,8 @@ GameObject:
   - component: {fileID: 2073896674}
   - component: {fileID: 2073896677}
   - component: {fileID: 2073896678}
+  - component: {fileID: 2073896679}
+  - component: {fileID: 2073896681}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12644,7 +12646,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnController: {fileID: 2073896678}
-  winnerText: {fileID: 1521781778}
+  mainBoardController: {fileID: 2073896681}
+  aiController: {fileID: 2073896679}
   grassSprite: {fileID: 0}
   knightSprite: {fileID: 0}
   ogreSprite: {fileID: 0}
@@ -12659,6 +12662,7 @@ MonoBehaviour:
   boardWinColour:
     serializedVersion: 2
     rgba: 0
+  winnerText: {fileID: 1521781778}
 --- !u!114 &2073896678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12672,6 +12676,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayersTurn: 0
+--- !u!114 &2073896679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a24bcba30e385c085ab7285466cdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2073896681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5701fd8c032ce433bf52282f5c0d978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardControllers: []
 --- !u!1 &2081592178
 GameObject:
   m_ObjectHideFlags: 0

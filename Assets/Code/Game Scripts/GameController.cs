@@ -8,7 +8,9 @@ public class GameController : MonoBehaviour
     // REFERENCES FOR GLOBAL ACCESS
     public static GameController Instance { get; private set; }
     public TurnController turnController;
-    public TextMeshProUGUI winnerText;
+    public MainBoardController mainBoardController;
+    [SerializeField] private GameObject mainBoard;
+    public AIController aiController;
 
     // IMAGES FOR TILES
     public Sprite grassSprite;
@@ -23,6 +25,9 @@ public class GameController : MonoBehaviour
     public Color32 highlightColour;
     public Color32 defaultBoardColour;
     public Color32 boardWinColour;
+
+    // VARIABLES FOR TEXT
+    public TextMeshProUGUI winnerText;
     
     //FUNCTIONS
     // Called before any other script to create singleton
@@ -50,5 +55,8 @@ public class GameController : MonoBehaviour
         else{
             Destroy(gameObject);
         }
+
+        // this might be needed to get list for ai
+        mainBoardController = mainBoard.GetComponent<MainBoardController>();
     }
 }
