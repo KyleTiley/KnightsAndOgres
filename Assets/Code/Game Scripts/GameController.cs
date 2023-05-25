@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public TurnController turnController;
     public MainBoardController mainBoardController;
     [SerializeField] private GameObject mainBoard;
-    public AIController aiController;
+    public EasyAIController easyAIController;
 
     // IMAGES FOR TILES
     public Sprite grassSprite;

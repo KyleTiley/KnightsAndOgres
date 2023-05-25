@@ -10,12 +10,12 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    // Launches into the game scene
+    // Game Scene
     public void LaunchGame(){
         SceneManager.LoadScene(1);
     }
 
-    // Quits game
+    // Quits Game
     public void QuitGame(){
         Application.Quit();
     }

@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EasyAIController : MonoBehaviour
+public class EasyAIController : AIController
 {
-    // REFERENCES
-    private GameController gameController;
+    // EASY AI THAT JUST RANDOMLY PLAYS A TURN
 
-    // VARIABLES
+    public void PlayTurn(){
 
+        // Only collects tiles, since easy AI does not use minimax and rather chooses a random tile
+        CollectAvailableTiles();
 
-    // FUNCTIONS
-    private void Awake() {
-        gameController = GameController.GameControllerInstance;
+        // Randomly chooses the tile to play
+        int tileToPlay;
+        tileToPlay = Random.Range(0, availableTiles.Count);
+        availableTiles[tileToPlay].OnTileClick();
     }
-
-
     
 }
