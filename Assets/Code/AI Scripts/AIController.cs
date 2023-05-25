@@ -44,8 +44,8 @@ public class AIController : MonoBehaviour
         }
     }
 
+    // Saves a board state to an array
     protected void SaveBoardState(){
-        // dont forget to clear array?
         int arrayHorizontalIndex = 0; // determines board number
         int arrayVerticalIndex = 0; // determines tile number on board
 
