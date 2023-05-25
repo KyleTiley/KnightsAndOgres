@@ -16,7 +16,7 @@ public class AIController : MonoBehaviour
 
     // FUNCTIONS
     private void Awake() {
-        gameController = GameController.Instance;
+        gameController = GameController.GameControllerInstance;
         mainBoardController = gameController.mainBoardController;
     }
 
@@ -54,4 +54,6 @@ public class AIController : MonoBehaviour
     private void HardcodedFirstMove(){
         // do this if neces, probably will be
     }
+
+
 }

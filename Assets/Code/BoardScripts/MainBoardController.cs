@@ -14,7 +14,7 @@ public class MainBoardController : MonoBehaviour
 
     // FUNCTIONS
     private void Awake() {
-        gameController = GameController.Instance;
+        gameController = GameController.GameControllerInstance;
         foreach(Transform child in transform){
             boardControllers.Add(child.GetComponent<BoardController>());
         }

@@ -6,7 +6,7 @@ using TMPro;
 public class GameController : MonoBehaviour
 {
     // REFERENCES FOR GLOBAL ACCESS
-    public static GameController Instance { get; private set; }
+    public static GameController GameControllerInstance { get; private set; }
     public TurnController turnController;
     public MainBoardController mainBoardController;
     [SerializeField] private GameObject mainBoard;
@@ -28,12 +28,26 @@ public class GameController : MonoBehaviour
 
     // VARIABLES FOR TEXT
     public TextMeshProUGUI winnerText;
+
+    // SINGLETON ACCESS FOR AI FUNCTIONALITY
+    private DifficultyController difficultyController;
     
     //FUNCTIONS
     // Called before any other script to create singleton
     private void Awake() {
         // Sets UI to defaults
         winnerText.text = "Battle!";
+
+        // Set singleton access
+        difficultyController = DifficultyController.DifficultyControllerInstance;
+
+        // Sets whether game is against AI or not
+        if(difficultyController.gameType){
+            turnController.gameIsAgainstAI = false;
+        }
+        else{
+            turnController.gameIsAgainstAI = true;
+        }
         
         // Sets default grass sprite for each tile
         grassSprite = Resources.Load<Sprite>("Art/GrassTile");
@@ -48,9 +62,9 @@ public class GameController : MonoBehaviour
         castleSprite = Resources.Load<Sprite>("Art/Castle");
         hutSprite = Resources.Load<Sprite>("Art/Hut");
 
-        // Creates a singleton
-        if(Instance == null){
-            Instance = this;
+        // Creates game controller singleton
+        if(GameControllerInstance == null){
+            GameControllerInstance = this;
         }
         else{
             Destroy(gameObject);

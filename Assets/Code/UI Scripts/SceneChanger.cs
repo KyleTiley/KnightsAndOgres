@@ -10,24 +10,9 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    // Player vs Player mode
-    public void PVP(){
+    // Launches into the game scene
+    public void LaunchGame(){
         SceneManager.LoadScene(1);
-    }
-
-    // Easy AI mode
-    public void EasyAI(){
-        SceneManager.LoadScene(2);
-    }
-
-    // Medium AI mode
-    public void MediumAI(){
-        SceneManager.LoadScene(3);
-    }
-
-    // Hard AI mode
-    public void HardAI(){
-        SceneManager.LoadScene(4);
     }
 
     // Quits game

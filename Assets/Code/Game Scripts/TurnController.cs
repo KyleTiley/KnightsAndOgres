@@ -13,7 +13,8 @@ public class TurnController : MonoBehaviour
     // VARIABLES
     // Denotes the active player, true: player 1 knight, false: player 2 ogre
     public bool isPlayersTurn;
-    private bool isAIStarting = false;
+    public bool isAIStarting = false;
+    public bool gameIsAgainstAI;
 
     //Player highlight colours
     private Color32 knightHighlight;
@@ -26,16 +27,19 @@ public class TurnController : MonoBehaviour
         OgreHighlight = new Color32(234, 175, 77, 150);
 
         isPlayersTurn = Random.Range(0,2) == 1;
-        gameController = GameController.Instance;
+        gameController = GameController.GameControllerInstance;
 
         aiController = gameController.aiController;
 
+        // Swaps turn functionality based on if playing against AI or not
         if(isPlayersTurn){
             gameController.highlightColour = knightHighlight;
         }
         else{
             gameController.highlightColour = OgreHighlight;
-            isAIStarting = true;
+            if(gameIsAgainstAI){
+                isAIStarting = true;
+            }
         }
     }
 
@@ -53,7 +57,7 @@ public class TurnController : MonoBehaviour
         // Calls the AI to play their move
         if(!isPlayersTurn){
             //might have to change this to something better later
-            if(gameController.winnerText.text == "Battle!"){
+            if(gameIsAgainstAI && gameController.winnerText.text == "Battle!"){
                 aiController.MiniMax();
             }
         }

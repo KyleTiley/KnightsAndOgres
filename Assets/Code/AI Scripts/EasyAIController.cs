@@ -12,8 +12,9 @@ public class EasyAIController : MonoBehaviour
 
     // FUNCTIONS
     private void Awake() {
-        gameController = GameController.Instance;
+        gameController = GameController.GameControllerInstance;
     }
+
 
     
 }

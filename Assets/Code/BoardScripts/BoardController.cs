@@ -21,7 +21,7 @@ public class BoardController : MonoBehaviour
 
     // FUNCTIONS
     private void Awake() {
-        gameController = GameController.Instance;
+        gameController = GameController.GameControllerInstance;
         mainBoardController = GetComponentInParent<MainBoardController>();
         foreach(Transform child in transform){
             tileControllers.Add(child.GetComponent<TileController>());

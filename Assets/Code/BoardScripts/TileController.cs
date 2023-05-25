@@ -26,7 +26,7 @@ public class TileController : MonoBehaviour
     // FUNCTIONS
     private void Awake() {
         // Sets up the global references
-        gameController = GameController.Instance;
+        gameController = GameController.GameControllerInstance;
         turnController = gameController.turnController;
         boardController = GetComponentInParent<BoardController>();
         mainBoardController = transform.parent.GetComponentInParent<MainBoardController>();
