@@ -18,7 +18,7 @@ public class AIController : MonoBehaviour
     protected List<TileController> availableTiles = new List<TileController>();
     protected List<BoardController> availableBoards = new List<BoardController>();
     protected int specifiedDepth;
-    protected int[,] boardStateArray = new int[9,9];
+    protected char[,] boardStateArray = new char[9,9];
 
     // VARIABLES FOR TILE UTILITY VALUES
     protected int centreTileValue = 3;
@@ -63,6 +63,7 @@ public class AIController : MonoBehaviour
         availableTiles[36].OnTileClick();
     }
 
+    // Used to get a list of all available tiles, for hardcoded move and randomplay
     protected void CollectAvailableTiles(){
         // Empties available tile list before filling again
         availableTiles.Clear();
@@ -70,6 +71,7 @@ public class AIController : MonoBehaviour
         // Adds all tiles that can be played to list
         foreach(BoardController board in mainBoardController.boardControllers){
             if(board.thisBoardSprite.color == gameController.highlightColour){
+                // save the board name and make sure to check all boards
                 availableBoards.Add(board);
                 foreach(TileController tile in board.tileControllers){
                     if(tile.canUseTile){
@@ -88,15 +90,17 @@ public class AIController : MonoBehaviour
         foreach(BoardController board in mainBoardController.boardControllers){
             foreach(TileController tile in board.tileControllers){
                 // Sets all tiles to empty to begin with
-                int tileValue = 0;
-
+                char tileValue = '.';
+                if(tile.canUseTile){
+                    tileValue = '0';
+                }
                 // If tile is a knight, set to -1, since they will always be the minimising player
-                if(tile.thisSprite.sprite == gameController.knightSprite){
-                    tileValue = -1;
+                else if(tile.thisSprite.sprite == gameController.knightSprite){
+                    tileValue = 'K';
                 }
                 // If tile is ogre, set to 1, since the AI is the maximising player
                 else if(tile.thisSprite.sprite == gameController.ogreSprite){
-                    tileValue = 1;
+                    tileValue = 'G';
                 }
 
                 boardStateArray[arrayHorizontalIndex, arrayVerticalIndex] = tileValue;
