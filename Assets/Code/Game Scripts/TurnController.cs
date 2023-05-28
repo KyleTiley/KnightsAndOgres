@@ -46,7 +46,7 @@ public class TurnController : MonoBehaviour
     private void Start() {
         // Calls the AI to play the first move if it is their turn
         if(isAIStarting){
-            aIController.PlayTurn();
+            aIController.PlayTurn(true);
         }
     }
 
@@ -56,7 +56,7 @@ public class TurnController : MonoBehaviour
         // Calls the AI to play their move if it is their turn
         if(!isPlayersTurn){
             if(gameIsAgainstAI && gameController.winnerText.text == "Battle!"){
-                aIController.PlayTurn();
+                aIController.PlayTurn(false);
             }
         }
     }

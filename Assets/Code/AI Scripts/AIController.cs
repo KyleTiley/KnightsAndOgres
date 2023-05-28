@@ -14,11 +14,16 @@ public class AIController : MonoBehaviour
     private EasyAIController easyAIController;
     private MiniMaxAI miniMaxAI;
 
-    // VARIABLES
+    // VARIABLES FOR BOARD STATES AND EVALUATION
     protected List<TileController> availableTiles = new List<TileController>();
-    private int depth;
-
+    protected List<BoardController> availableBoards = new List<BoardController>();
+    protected int specifiedDepth;
     protected int[,] boardStateArray = new int[9,9];
+
+    // VARIABLES FOR TILE UTILITY VALUES
+    protected int centreTileValue = 3;
+    protected int cornerTileValue = 2;
+    protected int sideTileValue = 1;
 
     // FUNCTIONS
     private void Awake() {
@@ -31,26 +36,32 @@ public class AIController : MonoBehaviour
     }
 
     // Plays the turn based on the chosen AI difficultyS
-    public void PlayTurn(){
+    public void PlayTurn(bool shouldHardCode){
         if(difficultyController.gameType != "EASY"){
-            if(difficultyController.gameType == "MEDIUM"){
-                depth = 3;
+            if(!shouldHardCode){
+                if(difficultyController.gameType == "MEDIUM"){
+                    specifiedDepth = 3;
+                }
+                else{
+                    specifiedDepth = 5;
+                }
+                miniMaxAI.MiniMax();
+                miniMaxAI.MinimaxDebugger();
             }
             else{
-                depth = 5;
+                HardcodedFirstMove();
             }
-            miniMaxAI.MiniMax();
         }
         else{
             easyAIController.RandomPlay();
         }
     }
 
-    // might have to make this return bool
-    // The optimal move will probably always be the same
-    // so will hard code that to cut down on processing time
+    // This is always the optimal first move when the AI starts the game, so it is harcoded to save time
     private void HardcodedFirstMove(){
-        // do this if neces, probably will be
+        CollectAvailableTiles();
+        // Tile 36 is the first available corner tile in the middle board (all corners tiles in middle board hold the same value)
+        availableTiles[36].OnTileClick();
     }
 
     protected void CollectAvailableTiles(){
@@ -60,6 +71,8 @@ public class AIController : MonoBehaviour
         // Adds all tiles that can be played to list
         foreach(BoardController board in mainBoardController.boardControllers){
             if(board.thisBoardSprite.color == gameController.highlightColour){
+                // save the board name and make sure to check all boards
+                availableBoards.Add(board);
                 foreach(TileController tile in board.tileControllers){
                     if(tile.canUseTile){
                         availableTiles.Add(tile);
@@ -69,7 +82,7 @@ public class AIController : MonoBehaviour
         }
     }
 
-    // Saves a board state to an array
+    // Saves the entire board state to an array
     protected void SaveBoardState(){
         int arrayHorizontalIndex = 0; // determines board number
         int arrayVerticalIndex = 0; // determines tile number on board
@@ -80,10 +93,10 @@ public class AIController : MonoBehaviour
                 // this is where utility is technically assigned, so expand this and move it somehwre else
 
                 if(tile.thisSprite.sprite == gameController.knightSprite){
-                    tileValue = 2;
+                    tileValue = -1;
                 }
                 else if(tile.thisSprite.sprite == gameController.ogreSprite){
-                    tileValue = -1;
+                    tileValue = 1;
                 }
 
                 boardStateArray[arrayHorizontalIndex, arrayVerticalIndex] = tileValue;
