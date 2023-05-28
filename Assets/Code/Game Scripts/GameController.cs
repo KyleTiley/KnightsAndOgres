@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour
     // SINGLETON ACCESS FOR AI FUNCTIONALITY
     private DifficultyController difficultyController;
     
-    //FUNCTIONS
+    // FUNCTIONS
     // Called before any other script to create singleton
     private void Awake() {
         // Sets UI to defaults
@@ -74,7 +74,7 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
         }
 
-        // this might be needed to get list for ai
+        // Used to get list for AI
         mainBoardController = mainBoard.GetComponent<MainBoardController>();
     }
 }

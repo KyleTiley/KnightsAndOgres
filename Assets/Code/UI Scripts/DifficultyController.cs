@@ -7,6 +7,7 @@ public class DifficultyController : MonoBehaviour
     // REFERENCES FOR GLOBAL ACCESS
     public static DifficultyController DifficultyControllerInstance { get; private set; }
 
+    // Denotes game mode
     public string gameType;
 
     private void Awake() {
@@ -19,9 +20,8 @@ public class DifficultyController : MonoBehaviour
         }
     }
 
-    // make these ints with a switch statement in the other statement maybe?
+    // Sets game options to support specific modes
 
-    // Sets game options to PVP
     public void PlayerVersusPlayer(){
         gameType = "PVP";
     }
