@@ -35,7 +35,7 @@ public class AIController : MonoBehaviour
         miniMaxAI = gameController.miniMaxAI;
     }
 
-    // Plays the turn based on the chosen AI difficultyS
+    // Plays the turn based on the chosen AI difficulty
     public void PlayTurn(bool shouldHardCode){
         if(difficultyController.gameType != "EASY"){
             if(!shouldHardCode){
@@ -46,7 +46,6 @@ public class AIController : MonoBehaviour
                     specifiedDepth = 5;
                 }
                 miniMaxAI.MiniMax();
-                miniMaxAI.MinimaxDebugger();
             }
             else{
                 HardcodedFirstMove();
@@ -84,23 +83,24 @@ public class AIController : MonoBehaviour
 
     // Saves the entire board state to an array
     protected void SaveBoardState(){
-        int arrayHorizontalIndex = 0; // determines board number
-        int arrayVerticalIndex = 0; // determines tile number on board
+        int arrayHorizontalIndex = 0; // Represents board number
+        int arrayVerticalIndex = 0; // Represents tile number on board
 
         foreach(BoardController board in mainBoardController.boardControllers){
             foreach(TileController tile in board.tileControllers){
+                // Sets all tiles to empty to begin with
                 int tileValue = 0;
-                // this is where utility is technically assigned, so expand this and move it somehwre else
 
+                // If tile is a knight, set to -1, since they will always be the minimising player
                 if(tile.thisSprite.sprite == gameController.knightSprite){
                     tileValue = -1;
                 }
+                // If tile is ogre, set to 1, since the AI is the maximising player
                 else if(tile.thisSprite.sprite == gameController.ogreSprite){
                     tileValue = 1;
                 }
 
                 boardStateArray[arrayHorizontalIndex, arrayVerticalIndex] = tileValue;
-
                 arrayVerticalIndex++;
             }
             arrayVerticalIndex = 0;
