@@ -32,7 +32,7 @@ public class MiniMaxAI : AIController
         int tileToPlayUtility = finalisedUtility.Max();
         // Finds the index of said tile
         int tileToPlay = finalisedUtility.ToList().IndexOf(tileToPlayUtility);
-        // Plays said tile for the AI
+        // Plays the tile for the AI
         availableTiles[tileToPlay].OnTileClick();
     }
 
@@ -42,7 +42,6 @@ public class MiniMaxAI : AIController
         int[] tileUtilities = new int[9];
 
         // Creates a temporary board state array as to not overwrite the original one
-        
         
         for(int i = 0; i < 9; i++){
             int evaluatedUtility = 0;
@@ -76,9 +75,6 @@ public class MiniMaxAI : AIController
         if(tile != 4){
             if(tile%2 != 0){
                 calculatedUtility += sideTileValue;
-                // if(tempBoardStateArray[4] != 0){
-
-                // }
             }
             else{
                 calculatedUtility += cornerTileValue;
@@ -86,11 +82,11 @@ public class MiniMaxAI : AIController
         }
         else{
             calculatedUtility += centreTileValue;
-            foreach(int tileToCheck in tempBoardStateArray){
-                if(tileToCheck != tile && tileToCheck != 0){
-                    calculatedUtility -= 1;
-                }
-            }
+            // foreach(int tileToCheck in tempBoardStateArray){
+            //     if(tileToCheck != tile && tileToCheck != 0){
+            //         calculatedUtility -= 1;
+            //     }
+            // }
         }
 
         // Returns the utility for this given tile

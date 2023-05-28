@@ -70,7 +70,6 @@ public class AIController : MonoBehaviour
         // Adds all tiles that can be played to list
         foreach(BoardController board in mainBoardController.boardControllers){
             if(board.thisBoardSprite.color == gameController.highlightColour){
-                // save the board name and make sure to check all boards
                 availableBoards.Add(board);
                 foreach(TileController tile in board.tileControllers){
                     if(tile.canUseTile){
@@ -106,6 +105,17 @@ public class AIController : MonoBehaviour
             arrayVerticalIndex = 0;
             arrayHorizontalIndex++;
         }
+
+        string debugOutput = " \n";
+        for(int i = 0; i < 9; i++){
+            string debugLine = "";
+            for(int j = 0; j< 9; j++){
+                debugLine += boardStateArray[i,j];
+            }
+            debugOutput += debugLine;
+            debugOutput += '\n';
+        }
+        Debug.Log(debugOutput);
     }
 
 }
