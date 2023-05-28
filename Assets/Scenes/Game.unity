@@ -12619,8 +12619,8 @@ GameObject:
   - component: {fileID: 2073896677}
   - component: {fileID: 2073896678}
   - component: {fileID: 2073896679}
-  - component: {fileID: 2073896680}
   - component: {fileID: 2073896681}
+  - component: {fileID: 2073896680}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12658,8 +12658,9 @@ MonoBehaviour:
   turnController: {fileID: 2073896678}
   mainBoardController: {fileID: 0}
   mainBoard: {fileID: 2025471461}
-  easyAIController: {fileID: 2073896680}
-  miniMaxAI: {fileID: 2073896681}
+  aIController: {fileID: 2073896679}
+  easyAIController: {fileID: 2073896681}
+  miniMaxAI: {fileID: 2073896680}
   grassSprite: {fileID: 0}
   knightSprite: {fileID: 0}
   ogreSprite: {fileID: 0}
@@ -12711,7 +12712,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2073896673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca2c51b424a14a2b080610e8d241063b, type: 3}
+  m_Script: {fileID: 11500000, guid: 28954906d183f3ab99238e7450fa53a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2073896681
@@ -12723,7 +12724,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2073896673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28954906d183f3ab99238e7450fa53a3, type: 3}
+  m_Script: {fileID: 11500000, guid: ca2c51b424a14a2b080610e8d241063b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2081592178

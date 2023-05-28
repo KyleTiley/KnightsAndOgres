@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject mainBoard;
 
     // AI REFERENCES
+    public AIController aIController;
     public EasyAIController easyAIController;
     public MiniMaxAI miniMaxAI;
 
@@ -45,7 +46,7 @@ public class GameController : MonoBehaviour
         difficultyController = DifficultyController.DifficultyControllerInstance;
 
         // Sets whether game is against AI or not
-        if(difficultyController.gameType){
+        if(difficultyController.gameType == "PVP"){
             turnController.gameIsAgainstAI = false;
         }
         else{

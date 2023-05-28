@@ -7,7 +7,7 @@ public class DifficultyController : MonoBehaviour
     // REFERENCES FOR GLOBAL ACCESS
     public static DifficultyController DifficultyControllerInstance { get; private set; }
 
-    public bool gameType; //true: pvp; false: pve
+    public string gameType;
 
     private void Awake() {
         //Creates difficulty controller singleton
@@ -19,13 +19,22 @@ public class DifficultyController : MonoBehaviour
         }
     }
 
+    // make these ints with a switch statement in the other statement maybe?
+
     // Sets game options to PVP
     public void PlayerVersusPlayer(){
-        gameType = true;
+        gameType = "PVP";
     }
 
-    // Sets game options to AI game
-    public void PlayerVersusAI(){
-        gameType = false;
+    public void EasyAI(){
+        gameType = "EASY";
+    }
+
+    public void MediumAI(){
+        gameType = "MEDIUM";
+    }
+
+    public void HardAI(){
+        gameType = "HARD";
     }
 }

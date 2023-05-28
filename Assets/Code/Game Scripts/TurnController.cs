@@ -7,8 +7,7 @@ public class TurnController : MonoBehaviour
     //??? make sure to allow switching between different ai difficulties
     // REFERENCES
     private GameController gameController;
-    private EasyAIController easyAIController;
-    private MiniMaxAI miniMaxAI;
+    private AIController aIController;
 
     // VARIABLES
     // Denotes the active player, true: player 1 knight, false: player 2 ogre
@@ -31,8 +30,7 @@ public class TurnController : MonoBehaviour
 
         // Allows access to other scripts using GameController Singleton
         gameController = GameController.GameControllerInstance;
-        easyAIController = gameController.easyAIController;
-        miniMaxAI = gameController.miniMaxAI;
+        aIController = gameController.aIController;
 
         // Swaps turn functionality based on if playing against AI or not
         if(isPlayersTurn){
@@ -50,7 +48,7 @@ public class TurnController : MonoBehaviour
     private void Start() {
         // Calls the AI to play the first move
         if(isAIStarting){
-            miniMaxAI.PlayTurn();
+            aIController.PlayTurn();
         }
     }
 
@@ -61,7 +59,7 @@ public class TurnController : MonoBehaviour
         if(!isPlayersTurn){
             //might have to change this to something better later
             if(gameIsAgainstAI && gameController.winnerText.text == "Battle!"){
-                miniMaxAI.PlayTurn();
+                aIController.PlayTurn();
             }
         }
     }

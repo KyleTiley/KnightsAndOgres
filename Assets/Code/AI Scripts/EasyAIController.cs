@@ -6,7 +6,7 @@ public class EasyAIController : AIController
 {
     // EASY AI THAT JUST RANDOMLY PLAYS A TURN
 
-    public void PlayTurn(){
+    public void RandomPlay(){
 
         // Only collects tiles, since easy AI does not use minimax and rather chooses a random tile
         CollectAvailableTiles();
@@ -16,5 +16,4 @@ public class EasyAIController : AIController
         tileToPlay = Random.Range(0, availableTiles.Count);
         availableTiles[tileToPlay].OnTileClick();
     }
-    
 }

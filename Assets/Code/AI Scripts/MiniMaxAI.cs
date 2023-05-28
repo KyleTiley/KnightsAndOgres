@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MiniMaxAI : AIController
 {
-    // private int depth = 5;
+    
 
     // this is for minimax
-    public void PlayTurn(){
+    public void MiniMax(){
         // CollectAvailableTiles();
 
         // // int tileToPlay;

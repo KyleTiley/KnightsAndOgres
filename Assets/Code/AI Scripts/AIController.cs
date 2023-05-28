@@ -9,16 +9,41 @@ public class AIController : MonoBehaviour
     // REFERENCES
     private GameController gameController;
     private MainBoardController mainBoardController;
+    private DifficultyController difficultyController;
+
+    private EasyAIController easyAIController;
+    private MiniMaxAI miniMaxAI;
 
     // VARIABLES
     protected List<TileController> availableTiles = new List<TileController>();
+    private int depth;
 
     protected int[,] boardStateArray = new int[9,9];
 
     // FUNCTIONS
     private void Awake() {
         gameController = GameController.GameControllerInstance;
+        difficultyController = DifficultyController.DifficultyControllerInstance;
         mainBoardController = gameController.mainBoardController;
+
+        easyAIController = gameController.easyAIController;
+        miniMaxAI = gameController.miniMaxAI;
+    }
+
+    // Plays the turn based on the chosen AI difficultyS
+    public void PlayTurn(){
+        if(difficultyController.gameType != "EASY"){
+            if(difficultyController.gameType == "MEDIUM"){
+                depth = 3;
+            }
+            else{
+                depth = 5;
+            }
+            miniMaxAI.MiniMax();
+        }
+        else{
+            easyAIController.RandomPlay();
+        }
     }
 
     // might have to make this return bool
@@ -52,8 +77,10 @@ public class AIController : MonoBehaviour
         foreach(BoardController board in mainBoardController.boardControllers){
             foreach(TileController tile in board.tileControllers){
                 int tileValue = 0;
+                // this is where utility is technically assigned, so expand this and move it somehwre else
+
                 if(tile.thisSprite.sprite == gameController.knightSprite){
-                    tileValue = 1;
+                    tileValue = 2;
                 }
                 else if(tile.thisSprite.sprite == gameController.ogreSprite){
                     tileValue = -1;
