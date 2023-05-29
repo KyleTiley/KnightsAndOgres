@@ -89,11 +89,13 @@ public class MiniMaxAI : AIController
         }
         // Randomly picks one (only if there is a tie in choices)
         int tileToPlay;
+        int maxUtilityIndex = 0;
         tileToPlay = UnityEngine.Random.Range(0, maxUtilityTiles.Count);
-        
-
-        // Put all tiles with the same max utility in a list
-        int maxUtilityIndex = boardUtilityArray.Cast<int>().ToList().IndexOf(tileToPlay);
+        for(int rand = 0; rand < maxUtilityTiles.Count; rand++){
+            if(rand == tileToPlay){
+                maxUtilityIndex = maxUtilityBoards[rand] * 9 + maxUtilityTiles[rand];
+            }
+        }
 
         // Play the move for the AI
         allTiles[maxUtilityIndex].OnTileClick();
@@ -118,7 +120,10 @@ public class MiniMaxAI : AIController
             tileUtility = CheckCentreUtility(i, j);
         }
 
+        // Checks if maximiser can win
         tileUtility += CheckForWin(i,j,'G');
+        // Checks if maximiser can block minimiser
+        tileUtility += CheckForWin(i,j,'K') / 2;
 
         // Debug.Log(tileUtility);
         return tileUtility;
