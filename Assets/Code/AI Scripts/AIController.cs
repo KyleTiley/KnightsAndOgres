@@ -22,9 +22,9 @@ public class AIController : MonoBehaviour
     protected char[,] boardStateArray = new char[9,9];
 
     // VARIABLES FOR TILE UTILITY VALUES
-    protected int centreTileValue = 4;
-    protected int cornerTileValue = 3;
-    protected int sideTileValue = 2;
+    protected int centreTileValue = -4;
+    protected int cornerTileValue = -3;
+    protected int sideTileValue = -2;
 
     // FUNCTIONS
     private void Awake() {
@@ -43,10 +43,10 @@ public class AIController : MonoBehaviour
         if(difficultyController.gameType != "EASY"){
             if(!shouldHardCode){
                 if(difficultyController.gameType == "MEDIUM"){
-                    depthSpecified = 3;
+                    depthSpecified = 2;
                 }
                 else{
-                    depthSpecified = 5;
+                    depthSpecified = 4;
                 }
                 miniMaxAI.MiniMax();
             }
