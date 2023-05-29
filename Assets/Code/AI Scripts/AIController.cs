@@ -15,15 +15,16 @@ public class AIController : MonoBehaviour
     private MiniMaxAI miniMaxAI;
 
     // VARIABLES FOR BOARD STATES AND EVALUATION
+    protected List<TileController> allTiles = new List<TileController>();
     protected List<TileController> availableTiles = new List<TileController>();
     protected List<BoardController> availableBoards = new List<BoardController>();
-    protected int specifiedDepth;
+    protected int depthSpecified;
     protected char[,] boardStateArray = new char[9,9];
 
     // VARIABLES FOR TILE UTILITY VALUES
-    protected int centreTileValue = 3;
-    protected int cornerTileValue = 2;
-    protected int sideTileValue = 1;
+    protected int centreTileValue = 4;
+    protected int cornerTileValue = 3;
+    protected int sideTileValue = 2;
 
     // FUNCTIONS
     private void Awake() {
@@ -33,6 +34,8 @@ public class AIController : MonoBehaviour
 
         easyAIController = gameController.easyAIController;
         miniMaxAI = gameController.miniMaxAI;
+
+        CollectAllTiles();
     }
 
     // Plays the turn based on the chosen AI difficulty
@@ -40,10 +43,10 @@ public class AIController : MonoBehaviour
         if(difficultyController.gameType != "EASY"){
             if(!shouldHardCode){
                 if(difficultyController.gameType == "MEDIUM"){
-                    specifiedDepth = 3;
+                    depthSpecified = 3;
                 }
                 else{
-                    specifiedDepth = 5;
+                    depthSpecified = 5;
                 }
                 miniMaxAI.MiniMax();
             }
@@ -61,6 +64,17 @@ public class AIController : MonoBehaviour
         CollectAvailableTiles();
         // Tile 36 is the first available corner tile in the middle board (all corners tiles in middle board hold the same value)
         availableTiles[36].OnTileClick();
+    }
+
+    protected void CollectAllTiles(){
+        allTiles.Clear();
+
+        // Adds all tiles to list
+        foreach(BoardController board in mainBoardController.boardControllers){
+            foreach(TileController tile in board.tileControllers){
+                allTiles.Add(tile);
+            }
+        }
     }
 
     // Used to get a list of all available tiles, for hardcoded move and randomplay
@@ -94,11 +108,11 @@ public class AIController : MonoBehaviour
                 if(tile.canUseTile){
                     tileValue = '0';
                 }
-                // If tile is a knight, set to -1, since they will always be the minimising player
+                // If tile is a knight, which is player
                 else if(tile.thisSprite.sprite == gameController.knightSprite){
                     tileValue = 'K';
                 }
-                // If tile is ogre, set to 1, since the AI is the maximising player
+                // If tile is ogre, which is AI
                 else if(tile.thisSprite.sprite == gameController.ogreSprite){
                     tileValue = 'G';
                 }
@@ -110,16 +124,16 @@ public class AIController : MonoBehaviour
             arrayHorizontalIndex++;
         }
 
-        string debugOutput = " \n";
-        for(int i = 0; i < 9; i++){
-            string debugLine = "";
-            for(int j = 0; j< 9; j++){
-                debugLine += boardStateArray[i,j];
-            }
-            debugOutput += debugLine;
-            debugOutput += '\n';
-        }
-        Debug.Log(debugOutput);
+        // string debugOutput = " \n";
+        // for(int i = 0; i < 9; i++){
+        //     string debugLine = "";
+        //     for(int j = 0; j< 9; j++){
+        //         debugLine += boardStateArray[i,j];
+        //     }
+        //     debugOutput += debugLine;
+        //     debugOutput += '\n';
+        // }
+        // Debug.Log(debugOutput);
     }
 
 }
