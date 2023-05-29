@@ -123,17 +123,5 @@ public class AIController : MonoBehaviour
             arrayVerticalIndex = 0;
             arrayHorizontalIndex++;
         }
-
-        // string debugOutput = " \n";
-        // for(int i = 0; i < 9; i++){
-        //     string debugLine = "";
-        //     for(int j = 0; j< 9; j++){
-        //         debugLine += boardStateArray[i,j];
-        //     }
-        //     debugOutput += debugLine;
-        //     debugOutput += '\n';
-        // }
-        // Debug.Log(debugOutput);
     }
-
 }

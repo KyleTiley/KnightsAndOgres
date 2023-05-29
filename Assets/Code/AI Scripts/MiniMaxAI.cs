@@ -58,11 +58,7 @@ public class MiniMaxAI : AIController
             }
         }
 
-        
-
-        // do something where you flip the utils based on who is playing
-
-        // DEBUG TO SHOW ALL UTILITY FOR TILES
+        // DEBUGGER USED TO SHOW ALL UTILITY FOR TILES
         string debugOutput = " \n";
         for(int i = 0; i < 9; i++){
             string debugLine = "";
@@ -72,7 +68,7 @@ public class MiniMaxAI : AIController
             debugOutput += debugLine;
             debugOutput += '\n';
         }
-        // Debug.Log(debugOutput);
+        Debug.Log(debugOutput);
 
         // Check which tiles utility is highest
         int maxUtility = boardUtilityArray.Cast<int>().Max();
