@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameController : MonoBehaviour
@@ -10,6 +11,7 @@ public class GameController : MonoBehaviour
     public TurnController turnController;
     public MainBoardController mainBoardController;
     [SerializeField] private GameObject mainBoard;
+    public TerrainProceduralGeneration terrainProceduralGeneration;
 
     // AI REFERENCES
     public AIController aIController;
@@ -54,7 +56,9 @@ public class GameController : MonoBehaviour
         }
         
         // Sets default grass sprite for each tile
-        grassSprite = Resources.Load<Sprite>("Art/GrassTile");
+        // grassSprite = Resources.Load<Sprite>("Art/GrassTile");
+        terrainProceduralGeneration.GenerateGrassTile();
+        grassSprite = terrainProceduralGeneration.newGrassSprite;
         defaultBoardColour = new Color32(0, 0, 0, 0);
         boardWinColour = new Color32(255, 255, 255, 255);
 
