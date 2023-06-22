@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameController : MonoBehaviour
@@ -10,6 +11,9 @@ public class GameController : MonoBehaviour
     public TurnController turnController;
     public MainBoardController mainBoardController;
     [SerializeField] private GameObject mainBoard;
+    public TerrainProceduralGeneration terrainProceduralGeneration;
+    public GrassGeneration grassGeneration;
+    public SpriteMerger spriteMerger;
 
     // AI REFERENCES
     public AIController aIController;
@@ -54,13 +58,30 @@ public class GameController : MonoBehaviour
         }
         
         // Sets default grass sprite for each tile
-        grassSprite = Resources.Load<Sprite>("Art/GrassTile");
+        // grassSprite = Resources.Load<Sprite>("Art/GrassTile");
+        grassGeneration.GenerateGrassTile();
+        grassSprite = grassGeneration.newGrassSprite;
         defaultBoardColour = new Color32(0, 0, 0, 0);
         boardWinColour = new Color32(255, 255, 255, 255);
 
         // Sets the tile sprites for each player as the game starts
-        knightSprite = Resources.Load<Sprite>("Art/Knight");
-        ogreSprite = Resources.Load<Sprite>("Art/Ogre");
+        var baseKnightSprite = Resources.Load<Sprite>("Art/KnightPortrait");
+        var baseOgreSprite = Resources.Load<Sprite>("Art/OgrePortrait");
+
+
+        // Merges sprites with newly generated grass tile
+        // Knight Sprite
+        spriteMerger.spritesToMerge.Add(grassSprite);
+        spriteMerger.spritesToMerge.Add(baseKnightSprite);
+        spriteMerger.MergeSprites();
+        knightSprite = spriteMerger.finalSprite;
+        // Empties sprites to merge
+        spriteMerger.spritesToMerge.Clear();
+        // Ogre Sprite
+        spriteMerger.spritesToMerge.Add(grassSprite);
+        spriteMerger.spritesToMerge.Add(baseOgreSprite);
+        spriteMerger.MergeSprites();
+        ogreSprite = spriteMerger.finalSprite;
 
         // Sets the board winning sprites for each player
         castleSprite = Resources.Load<Sprite>("Art/Castle");
