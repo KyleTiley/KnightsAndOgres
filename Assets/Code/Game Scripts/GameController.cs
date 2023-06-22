@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public MainBoardController mainBoardController;
     [SerializeField] private GameObject mainBoard;
     public TerrainProceduralGeneration terrainProceduralGeneration;
+    public GrassGeneration grassGeneration;
 
     // AI REFERENCES
     public AIController aIController;
@@ -57,8 +58,8 @@ public class GameController : MonoBehaviour
         
         // Sets default grass sprite for each tile
         // grassSprite = Resources.Load<Sprite>("Art/GrassTile");
-        terrainProceduralGeneration.GenerateGrassTile();
-        grassSprite = terrainProceduralGeneration.newGrassSprite;
+        grassGeneration.GenerateGrassTile();
+        grassSprite = grassGeneration.newGrassSprite;
         defaultBoardColour = new Color32(0, 0, 0, 0);
         boardWinColour = new Color32(255, 255, 255, 255);
 

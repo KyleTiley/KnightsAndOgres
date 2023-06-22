@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// OLD SCRIPT NO LONGER IN USE
+
 public class TerrainProceduralGeneration : MonoBehaviour
 {
     // REFERENCES
@@ -24,6 +26,9 @@ public class TerrainProceduralGeneration : MonoBehaviour
     int grassHeight;
     
     public void GenerateGrassTile(){
+        // Apparently there is no trash collection when using Sprite.Create, so this might be needed
+        Resources.UnloadUnusedAssets();
+        
         Texture2D thisGrassTexture = new Texture2D(grassTextureWidth, grassTextureHeight);
 
         // Sets height of grass sections
@@ -77,6 +82,8 @@ public class TerrainProceduralGeneration : MonoBehaviour
         // Applies the created texture and overwrites the blank texture
         thisGrassTexture.Apply();
         newGrassSprite = Sprite.Create(thisGrassTexture, new Rect(0.0f, 0.0f, thisGrassTexture.width, thisGrassTexture.height), new Vector2(0.5f, 0.5f), 100.0f);
+
+        // Should call sprite merger from here !!! if possible
     }
 
     // Sets starting points based on how many grass is wanted on the X and Y axis respectively
