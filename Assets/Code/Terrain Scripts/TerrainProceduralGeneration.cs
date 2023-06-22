@@ -14,8 +14,8 @@ public class TerrainProceduralGeneration : MonoBehaviour
     int grassTextureWidth = 256;
     int grassTextureHeight = 256;
     
-    int grassOnX = 3;
-    int grassOnY = 3;
+    int grassOnX = 4;
+    int grassOnY = 4;
 
     int numberOfStartingPoints;
     int[,] startingPoints;
@@ -50,10 +50,10 @@ public class TerrainProceduralGeneration : MonoBehaviour
                     int newRnd = rnd.Next(-1,2);
 
                     thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd, startingPoints[point, 1] + height, grassBladeColour);
-                    // thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd +1, startingPoints[point, 1] + height, grassBladeColour);
-                    // thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd -1, startingPoints[point, 1] + height, grassBladeColour);
-                    // thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd -2, startingPoints[point, 1] + height, grassBladeColour);
-                    // thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd +2, startingPoints[point, 1] + height, grassBladeColour);
+                    thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd +1, startingPoints[point, 1] + height, grassBladeColour);
+                    thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd -1, startingPoints[point, 1] + height, grassBladeColour);
+                    thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd -2, startingPoints[point, 1] + height, grassBladeColour);
+                    thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd +2, startingPoints[point, 1] + height, grassBladeColour);
                     // Cummulative offset to spread out blades
                     offset += (offset)/(10 + height/10);
                 }
@@ -87,8 +87,8 @@ public class TerrainProceduralGeneration : MonoBehaviour
         for(int xPoint = 0; xPoint < grassOnX; xPoint++){
 
             for(int yPoint = 0; yPoint < grassOnY; yPoint++){
-                startingPoints[xPoint, 0] = (xPoint * xOffset) + xOffset;
-                startingPoints[yPoint, 1] = (yPoint * yOffset) + yOffset;
+                startingPoints[(grassOnX * xPoint) + yPoint, 0] = (xPoint * xOffset) + xOffset;
+                startingPoints[(grassOnX * xPoint) + yPoint, 1] = (yPoint * yOffset) + yOffset;
 
                 Debug.Log(startingPoints[xPoint,0] + " : " + startingPoints[yPoint,1]);
             }
