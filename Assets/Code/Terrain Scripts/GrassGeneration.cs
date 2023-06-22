@@ -24,6 +24,9 @@ public class GrassGeneration : MonoBehaviour
     int randomGrassTexture = 20;
     
     public void GenerateGrassTile(){
+        // Apparently sprite.create has no trash collection, so this might be needed
+        Resources.UnloadUnusedAssets();
+
         Texture2D thisGrassTexture = new Texture2D(grassTextureWidth, grassTextureHeight);
 
         // Sets height of grass sections

@@ -12623,6 +12623,7 @@ GameObject:
   - component: {fileID: 2073896680}
   - component: {fileID: 2073896682}
   - component: {fileID: 2073896683}
+  - component: {fileID: 2073896684}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12662,6 +12663,7 @@ MonoBehaviour:
   mainBoard: {fileID: 2025471461}
   terrainProceduralGeneration: {fileID: 2073896682}
   grassGeneration: {fileID: 2073896683}
+  spriteMerger: {fileID: 2073896684}
   aIController: {fileID: 2073896679}
   easyAIController: {fileID: 2073896681}
   miniMaxAI: {fileID: 2073896680}
@@ -12757,6 +12759,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newGrassSprite: {fileID: 0}
+--- !u!114 &2073896684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d43c6a1d2ee388c119735b6243694d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spritesToMerge: []
+  finalSprite: {fileID: 0}
 --- !u!1 &2081592178
 GameObject:
   m_ObjectHideFlags: 0

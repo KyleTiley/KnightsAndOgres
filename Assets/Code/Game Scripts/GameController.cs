@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject mainBoard;
     public TerrainProceduralGeneration terrainProceduralGeneration;
     public GrassGeneration grassGeneration;
+    public SpriteMerger spriteMerger;
 
     // AI REFERENCES
     public AIController aIController;
@@ -64,8 +65,25 @@ public class GameController : MonoBehaviour
         boardWinColour = new Color32(255, 255, 255, 255);
 
         // Sets the tile sprites for each player as the game starts
+        var baseKnightSprite = Resources.Load<Sprite>("Art/Knight");
+        var baseOgreSprite = Resources.Load<Sprite>("Art/Ogre");
         knightSprite = Resources.Load<Sprite>("Art/Knight");
         ogreSprite = Resources.Load<Sprite>("Art/Ogre");
+
+
+        // Merges sprites with newly generated grass tile
+        // Knight Sprite
+        spriteMerger.spritesToMerge.Add(baseKnightSprite);
+        spriteMerger.spritesToMerge.Add(grassSprite);
+        spriteMerger.MergeSprites();
+        knightSprite = spriteMerger.finalSprite;
+        // Empties sprites to merge
+        spriteMerger.spritesToMerge.Clear();
+        // Ogre Sprite
+        spriteMerger.spritesToMerge.Add(baseOgreSprite);
+        spriteMerger.spritesToMerge.Add(grassSprite);
+        spriteMerger.MergeSprites();
+        ogreSprite = spriteMerger.finalSprite;
 
         // Sets the board winning sprites for each player
         castleSprite = Resources.Load<Sprite>("Art/Castle");

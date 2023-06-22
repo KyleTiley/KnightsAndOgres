@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class SpriteMerger : MonoBehaviour
 {
-    private Sprite[] spritesToMerge = null;
+    public List<Sprite> spritesToMerge = null;
 
-    private void MergeSprites(){
+    public Sprite finalSprite;
+
+    public void MergeSprites(){
+        // Apparently sprite.create has no trash collection, so this might be needed
+        Resources.UnloadUnusedAssets();
 
         var newTexture = new Texture2D(256, 256);
 
@@ -17,7 +21,7 @@ public class SpriteMerger : MonoBehaviour
             }
         }
 
-        for(int i = 0; i < spritesToMerge.Length; i++){
+        for(int i = 0; i < spritesToMerge.Count; i++){
             for(int x = 0; x < spritesToMerge[i].texture.width; x++){
                 for(int y = 0; y < spritesToMerge[i].texture.height; y++){
                     // Checks if the pixel is transparent or not
@@ -32,8 +36,7 @@ public class SpriteMerger : MonoBehaviour
 
         newTexture.Apply();
 
-        var finalSprite = Sprite.Create(newTexture, new Rect(0.0f, 0.0f, newTexture.width, newTexture.height), new Vector2(0.5f, 0.5f), 100.0f);
-        finalSprite.name = "New Sprite";
+        finalSprite = Sprite.Create(newTexture, new Rect(0.0f, 0.0f, newTexture.width, newTexture.height), new Vector2(0.5f, 0.5f), 100.0f);
         // dont need to include any sprite renderer logic right?
     }  
 }
