@@ -14,17 +14,20 @@ public class TerrainProceduralGeneration : MonoBehaviour
     int grassTextureWidth = 256;
     int grassTextureHeight = 256;
     
-    int grassOnX = 4;
+    int grassOnX = 3;
     int grassOnY = 4;
 
     int numberOfStartingPoints;
     int[,] startingPoints;
 
     int bladesOfGrass = 3;
-    int grassHeight = 50;
+    int grassHeight;
     
     public void GenerateGrassTile(){
         Texture2D thisGrassTexture = new Texture2D(grassTextureWidth, grassTextureHeight);
+
+        // Sets height of grass sections
+        grassHeight = grassTextureHeight / (grassOnY + 2);
 
         // Fill with default grass colour
         for(int h = 0; h < grassTextureHeight; h++){
@@ -54,8 +57,9 @@ public class TerrainProceduralGeneration : MonoBehaviour
                     thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd -1, startingPoints[point, 1] + height, grassBladeColour);
                     thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd -2, startingPoints[point, 1] + height, grassBladeColour);
                     thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd +2, startingPoints[point, 1] + height, grassBladeColour);
+                    
                     // Cummulative offset to spread out blades
-                    offset += (offset)/(10 + height/10);
+                    offset += offset/(grassOnX + height);
                 }
             }
         }
@@ -88,13 +92,12 @@ public class TerrainProceduralGeneration : MonoBehaviour
 
             for(int yPoint = 0; yPoint < grassOnY; yPoint++){
                 startingPoints[(grassOnX * xPoint) + yPoint, 0] = (xPoint * xOffset) + xOffset;
-                startingPoints[(grassOnX * xPoint) + yPoint, 1] = (yPoint * yOffset) + yOffset;
-
-                Debug.Log(startingPoints[xPoint,0] + " : " + startingPoints[yPoint,1]);
+                startingPoints[(grassOnX * xPoint) + yPoint, 1] = (yPoint * yOffset) + yOffset/2;
             }
-            
+        }
 
-            
+        for(int i = 0; i < numberOfStartingPoints; i++){
+            Debug.Log(startingPoints[i, 0] + " : " + startingPoints[i, 1]);
         }
     }
 }
