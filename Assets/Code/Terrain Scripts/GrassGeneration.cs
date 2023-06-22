@@ -97,10 +97,14 @@ public class GrassGeneration : MonoBehaviour
         for(int xPoint = 0; xPoint < grassOnX; xPoint++){
 
             for(int yPoint = 0; yPoint < grassOnY; yPoint++){
+                System.Random rnd = new System.Random();
+                
                 // Sets the X value
-                startingPoints[xPoint, yPoint, 0] = (xPoint * xOffset) + xOffset;
+                int xRnd = rnd.Next(-5, 6);
+                startingPoints[xPoint, yPoint, 0] = (xPoint * xOffset) + (xOffset + xRnd);
                 // Sets the Y value
-                startingPoints[xPoint, yPoint, 1] = (yPoint * yOffset) + yOffset/2;
+                int yRnd = rnd.Next(-5, 6);
+                startingPoints[xPoint, yPoint, 1] = (yPoint * yOffset) + (yOffset + yRnd)/2;
             }
         }
 
