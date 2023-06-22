@@ -14,11 +14,15 @@ public class TerrainProceduralGeneration : MonoBehaviour
     int grassTextureWidth = 256;
     int grassTextureHeight = 256;
 
-    int[,] startingPoints = new int[9, 2]
-    { {64, 64}, {64, 128}, {64, 192},
-    {128, 64}, {128, 128}, {128, 192},
-    {192, 64}, {192, 128}, {192, 192} };
+    int numberOfStartingPoints = 9;
+    int[,] startingPoints = new int[,]
+    { {64, 32}, {64, 96}, {64, 160},
+    {128, 32}, {128, 96}, {128, 160},
+    {192, 32}, {192, 96}, {192, 160} };
 
+    int bladesOfGrass = 3;
+    int grassHeight = 50;
+    
     public void GenerateGrassTile(){
         Texture2D thisGrassTexture = new Texture2D(grassTextureWidth, grassTextureHeight);
 
@@ -29,18 +33,31 @@ public class TerrainProceduralGeneration : MonoBehaviour
             }
         }
 
-        // Generate blades of grass for the sprite
-        int pixelsPerGrass = 0;
-        while(pixelsPerGrass < 20){
-            // Generates for each starting point
-            for(int i = 0; i < 9; i++){
-                int grassBladeHeight = Random.Range(10,50);
-                for(int j = 0; j < grassBladeHeight; j++){
-                    int grassBladeThickness = Random.Range(0,5);
-                    thisGrassTexture.SetPixel(startingPoints[i,0], startingPoints[i,1] + j, grassBladeColour);
+        // Generates blades of grass for each starting point
+        for(int point = 0; point < numberOfStartingPoints; point++){
+            thisGrassTexture.SetPixel(startingPoints[point, 0], startingPoints[point, 1], grassBladeColour);
+            
+            // Generates a blade at each starting point
+            for(int blade = 0; blade < bladesOfGrass; blade++){
+                // Calculate a an offset for each blade of grass
+                float offset = (int)Mathf.Pow(-1,blade);
+                // Create grass with a certain height
+                for(int height = 0; height < grassHeight; height++){
+                
+                    System.Random rnd = new System.Random();
+                    int newRnd = rnd.Next(-3,4);
+                    thisGrassTexture.SetPixel(startingPoints[point, 0] + (int)offset + newRnd, startingPoints[point, 1] + height, grassBladeColour);
+
+                    // Cummulative offset to spread out blades
+                    offset += offset/10;
                 }
             }
-            pixelsPerGrass++;
+            // int grassBladeHeight = Random.Range(10,50);
+            // 
+            // for(int j = 0; j < grassBladeHeight; j++){
+            //     int grassBladeThickness = Random.Range(0,5);
+                    
+            // }
         }
         
         // Add texture to grass with random dots
