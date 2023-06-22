@@ -65,23 +65,21 @@ public class GameController : MonoBehaviour
         boardWinColour = new Color32(255, 255, 255, 255);
 
         // Sets the tile sprites for each player as the game starts
-        var baseKnightSprite = Resources.Load<Sprite>("Art/Knight");
-        var baseOgreSprite = Resources.Load<Sprite>("Art/Ogre");
-        knightSprite = Resources.Load<Sprite>("Art/Knight");
-        ogreSprite = Resources.Load<Sprite>("Art/Ogre");
+        var baseKnightSprite = Resources.Load<Sprite>("Art/KnightPortrait");
+        var baseOgreSprite = Resources.Load<Sprite>("Art/OgrePortrait");
 
 
         // Merges sprites with newly generated grass tile
         // Knight Sprite
-        spriteMerger.spritesToMerge.Add(baseKnightSprite);
         spriteMerger.spritesToMerge.Add(grassSprite);
+        spriteMerger.spritesToMerge.Add(baseKnightSprite);
         spriteMerger.MergeSprites();
         knightSprite = spriteMerger.finalSprite;
         // Empties sprites to merge
         spriteMerger.spritesToMerge.Clear();
         // Ogre Sprite
-        spriteMerger.spritesToMerge.Add(baseOgreSprite);
         spriteMerger.spritesToMerge.Add(grassSprite);
+        spriteMerger.spritesToMerge.Add(baseOgreSprite);
         spriteMerger.MergeSprites();
         ogreSprite = spriteMerger.finalSprite;
 

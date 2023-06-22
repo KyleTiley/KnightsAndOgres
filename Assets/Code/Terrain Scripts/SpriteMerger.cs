@@ -12,7 +12,7 @@ public class SpriteMerger : MonoBehaviour
         // Apparently sprite.create has no trash collection, so this might be needed
         Resources.UnloadUnusedAssets();
 
-        var newTexture = new Texture2D(256, 256);
+        Texture2D newTexture = new Texture2D(256, 256);
 
         // Sets texture to transparent
         for(int x = 0; x < newTexture.width; x++){
@@ -37,6 +37,5 @@ public class SpriteMerger : MonoBehaviour
         newTexture.Apply();
 
         finalSprite = Sprite.Create(newTexture, new Rect(0.0f, 0.0f, newTexture.width, newTexture.height), new Vector2(0.5f, 0.5f), 100.0f);
-        // dont need to include any sprite renderer logic right?
     }  
 }
