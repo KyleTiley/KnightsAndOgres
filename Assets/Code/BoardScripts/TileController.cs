@@ -48,8 +48,21 @@ public class TileController : MonoBehaviour
         // Sets tile to usable
         canUseTile = true;
 
-        // Sets the sprite of the tile to grass
-        thisSprite.sprite = gameController.grassSprite;
+        // Sets the sprite of the tile to one of the 3 grass tile, randomly
+        System.Random rnd = new System.Random();
+        int rndGrass = rnd.Next(0,3);
+        switch (rndGrass)
+            {
+                case 0:
+                    thisSprite.sprite = gameController.grassSprite1;
+                    break;
+                case 1:
+                    thisSprite.sprite = gameController.grassSprite2;
+                    break;
+                case 2:
+                    thisSprite.sprite = gameController.grassSprite3;
+                    break;
+            }
     }
 
     // Used to assign location properties to the tile
