@@ -56,7 +56,8 @@ public class BoardController : MonoBehaviour
     // Checks rows for a winner
     private void CheckRows(bool _player){
         // Top row
-        if(tileControllers[1].thisSprite.sprite != gameController.grassSprite1 || tileControllers[1].thisSprite.sprite != gameController.grassSprite2 || tileControllers[1].thisSprite.sprite != gameController.grassSprite3){
+        if(tileControllers[1].thisSprite.sprite.name != ""){
+            Debug.Log(tileControllers[1].thisSprite.sprite.name);
             if(tileControllers[0].thisSprite.sprite.name == tileControllers[1].thisSprite.sprite.name
             && tileControllers[1].thisSprite.sprite.name == tileControllers[2].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -64,7 +65,7 @@ public class BoardController : MonoBehaviour
         }
         
         // Middle row
-        if(tileControllers[4].thisSprite.sprite != gameController.grassSprite1 || tileControllers[4].thisSprite.sprite != gameController.grassSprite2 || tileControllers[4].thisSprite.sprite != gameController.grassSprite3){
+        if(tileControllers[4].thisSprite.sprite.name != ""){
             if(tileControllers[3].thisSprite.sprite.name == tileControllers[4].thisSprite.sprite.name
             && tileControllers[4].thisSprite.sprite.name == tileControllers[5].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -72,7 +73,7 @@ public class BoardController : MonoBehaviour
         }
         
         // Bottom row
-        if(tileControllers[7].thisSprite.sprite != gameController.grassSprite1 || tileControllers[7].thisSprite.sprite != gameController.grassSprite2 || tileControllers[7].thisSprite.sprite != gameController.grassSprite3){
+        if(tileControllers[7].thisSprite.sprite.name != ""){
             if(tileControllers[6].thisSprite.sprite.name == tileControllers[7].thisSprite.sprite.name
             && tileControllers[7].thisSprite.sprite.name == tileControllers[8].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -83,7 +84,7 @@ public class BoardController : MonoBehaviour
     // Checks columns for a winner
     private void CheckColumns(bool _player){
         // Left column
-        if(tileControllers[3].thisSprite.sprite != gameController.grassSprite1 || tileControllers[3].thisSprite.sprite != gameController.grassSprite2 || tileControllers[3].thisSprite.sprite != gameController.grassSprite3){
+        if(tileControllers[3].thisSprite.sprite.name != ""){
             if(tileControllers[0].thisSprite.sprite.name == tileControllers[3].thisSprite.sprite.name
             && tileControllers[3].thisSprite.sprite.name == tileControllers[6].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -91,7 +92,7 @@ public class BoardController : MonoBehaviour
         }
 
         // Middle column
-        if(tileControllers[4].thisSprite.sprite != gameController.grassSprite1 || tileControllers[4].thisSprite.sprite != gameController.grassSprite2 || tileControllers[4].thisSprite.sprite != gameController.grassSprite3){
+        if(tileControllers[4].thisSprite.sprite.name != ""){
             if(tileControllers[1].thisSprite.sprite.name == tileControllers[4].thisSprite.sprite.name
             && tileControllers[4].thisSprite.sprite.name == tileControllers[7].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -99,7 +100,7 @@ public class BoardController : MonoBehaviour
         }
 
         // Right column
-        if(tileControllers[5].thisSprite.sprite != gameController.grassSprite1 || tileControllers[5].thisSprite.sprite != gameController.grassSprite2 || tileControllers[5].thisSprite.sprite != gameController.grassSprite3){
+        if(tileControllers[5].thisSprite.sprite.name != ""){
             if(tileControllers[2].thisSprite.sprite.name == tileControllers[5].thisSprite.sprite.name
             && tileControllers[5].thisSprite.sprite.name == tileControllers[8].thisSprite.sprite.name){
                 SetBoardWinner(_player);
@@ -109,7 +110,7 @@ public class BoardController : MonoBehaviour
 
     // Checks diagonals for a winner
     private void CheckDiagonals(bool _player){
-        if(tileControllers[4].thisSprite.sprite != gameController.grassSprite1 || tileControllers[4].thisSprite.sprite != gameController.grassSprite2 || tileControllers[4].thisSprite.sprite != gameController.grassSprite3){
+        if(tileControllers[4].thisSprite.sprite.name != ""){
             // First diagonal
             if(tileControllers[0].thisSprite.sprite.name == tileControllers[4].thisSprite.sprite.name
             && tileControllers[4].thisSprite.sprite.name == tileControllers[8].thisSprite.sprite.name){
