@@ -88,6 +88,7 @@ public class GameController : MonoBehaviour
         spriteMerger.spritesToMerge.Add(baseKnightSprite);
         spriteMerger.MergeSprites();
         knightSprite = spriteMerger.finalSprite;
+        knightSprite.name = "Knight";
         // Empties sprites to merge
         spriteMerger.spritesToMerge.Clear();
         // Ogre Sprite
@@ -95,6 +96,7 @@ public class GameController : MonoBehaviour
         spriteMerger.spritesToMerge.Add(baseOgreSprite);
         spriteMerger.MergeSprites();
         ogreSprite = spriteMerger.finalSprite;
+        ogreSprite.name = "Ogre";
 
         // Sets the board winning sprites for each player
         castleSprite = Resources.Load<Sprite>("Art/Castle");
