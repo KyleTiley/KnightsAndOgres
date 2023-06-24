@@ -2053,7 +2053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 57bd794a70dbb9186a0ee818673a2d5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a1611eef3828915cb977307c406d523, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7185,7 +7185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ac0848ff8b96ba3abb626d55466ff652, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f987e4c7b3ab7e285adf76e19877491e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12621,6 +12621,9 @@ GameObject:
   - component: {fileID: 2073896679}
   - component: {fileID: 2073896681}
   - component: {fileID: 2073896680}
+  - component: {fileID: 2073896682}
+  - component: {fileID: 2073896683}
+  - component: {fileID: 2073896684}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12658,6 +12661,9 @@ MonoBehaviour:
   turnController: {fileID: 2073896678}
   mainBoardController: {fileID: 0}
   mainBoard: {fileID: 2025471461}
+  terrainProceduralGeneration: {fileID: 2073896682}
+  grassGeneration: {fileID: 2073896683}
+  spriteMerger: {fileID: 2073896684}
   aIController: {fileID: 2073896679}
   easyAIController: {fileID: 2073896681}
   miniMaxAI: {fileID: 2073896680}
@@ -12727,6 +12733,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2c51b424a14a2b080610e8d241063b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2073896682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ad2eb5ffdeee3028792cad1fec45a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newGrassSprite: {fileID: 0}
+--- !u!114 &2073896683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70befe36b9124115c8113f0aef01f409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newGrassSprite: {fileID: 0}
+--- !u!114 &2073896684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d43c6a1d2ee388c119735b6243694d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spritesToMerge: []
+  finalSprite: {fileID: 0}
 --- !u!1 &2081592178
 GameObject:
   m_ObjectHideFlags: 0
