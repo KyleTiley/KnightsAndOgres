@@ -11,7 +11,6 @@ public class GameController : MonoBehaviour
     public TurnController turnController;
     public MainBoardController mainBoardController;
     [SerializeField] private GameObject mainBoard;
-    public TerrainProceduralGeneration terrainProceduralGeneration;
     public GrassGeneration grassGeneration;
     public SpriteMerger spriteMerger;
 
@@ -21,7 +20,9 @@ public class GameController : MonoBehaviour
     public MiniMaxAI miniMaxAI;
 
     // IMAGES FOR TILES
-    public Sprite grassSprite;
+    public Sprite grassSprite1;
+    public Sprite grassSprite2;
+    public Sprite grassSprite3;
     public Sprite knightSprite;
     public Sprite ogreSprite;
 
@@ -58,27 +59,39 @@ public class GameController : MonoBehaviour
         }
         
         // Sets default grass sprite for each tile
-        // grassSprite = Resources.Load<Sprite>("Art/GrassTile");
-        grassGeneration.GenerateGrassTile();
-        grassSprite = grassGeneration.newGrassSprite;
+        for(int i = 0; i < 3; i++){
+            grassGeneration.GenerateGrassTile(i);
+            switch (i)
+            {
+                case 0:
+                    grassSprite1 = grassGeneration.newGrassSprite;
+                    break;
+                case 1:
+                    grassSprite2 = grassGeneration.newGrassSprite;
+                    break;
+                case 2:
+                    grassSprite3 = grassGeneration.newGrassSprite;
+                    break;
+            }
+        }
         defaultBoardColour = new Color32(0, 0, 0, 0);
         boardWinColour = new Color32(255, 255, 255, 255);
 
         // Sets the tile sprites for each player as the game starts
-        var baseKnightSprite = Resources.Load<Sprite>("Art/KnightPortrait");
-        var baseOgreSprite = Resources.Load<Sprite>("Art/OgrePortrait");
+        var baseKnightSprite = Resources.Load<Sprite>("Art/Knight");
+        var baseOgreSprite = Resources.Load<Sprite>("Art/Ogre");
 
 
         // Merges sprites with newly generated grass tile
         // Knight Sprite
-        spriteMerger.spritesToMerge.Add(grassSprite);
+        spriteMerger.spritesToMerge.Add(grassSprite1);
         spriteMerger.spritesToMerge.Add(baseKnightSprite);
         spriteMerger.MergeSprites();
         knightSprite = spriteMerger.finalSprite;
         // Empties sprites to merge
         spriteMerger.spritesToMerge.Clear();
         // Ogre Sprite
-        spriteMerger.spritesToMerge.Add(grassSprite);
+        spriteMerger.spritesToMerge.Add(grassSprite1);
         spriteMerger.spritesToMerge.Add(baseOgreSprite);
         spriteMerger.MergeSprites();
         ogreSprite = spriteMerger.finalSprite;

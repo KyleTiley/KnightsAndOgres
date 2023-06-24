@@ -13,8 +13,8 @@ public class GrassGeneration : MonoBehaviour
     int grassTextureWidth = 256;
     int grassTextureHeight = 256;
     
-    int grassOnX = 4;
-    int grassOnY = 3;
+    int grassOnX;
+    int grassOnY;
 
     int numberOfStartingPoints;
     int[,,] startingPoints;
@@ -23,11 +23,28 @@ public class GrassGeneration : MonoBehaviour
     int grassHeight;
     int randomGrassTexture = 20;
     
-    public void GenerateGrassTile(){
+    public void GenerateGrassTile(int whichGrass){
         // Apparently sprite.create has no trash collection, so this might be needed
         Resources.UnloadUnusedAssets();
 
         Texture2D thisGrassTexture = new Texture2D(grassTextureWidth, grassTextureHeight);
+
+        // Sets grass X and Y based on which grass is being called
+        switch (whichGrass)
+            {
+                case 0:
+                    grassOnX = 4;
+                    grassOnY = 3;
+                    break;
+                case 1:
+                    grassOnX = 3;
+                    grassOnY = 2;
+                    break;
+                case 2:
+                    grassOnX = 3;
+                    grassOnY = 3;
+                    break;
+            }
 
         // Sets height of grass sections
         grassHeight = grassTextureHeight / (grassOnY + 2);
@@ -83,6 +100,17 @@ public class GrassGeneration : MonoBehaviour
         // Applies the created texture and overwrites the blank texture
         thisGrassTexture.Apply();
         newGrassSprite = Sprite.Create(thisGrassTexture, new Rect(0.0f, 0.0f, thisGrassTexture.width, thisGrassTexture.height), new Vector2(0.5f, 0.5f), 100.0f);
+    }
+
+    private void SetXandY(){
+
+        // System.Random rnd = new System.Random();
+        // int rndXandY = rnd.Next(0,3);
+
+
+
+        // int grassOnX = 4;
+        // sint grassOnY = 3;
     }
 
     // Sets starting points based on how many grass is wanted on the X and Y axis respectively
