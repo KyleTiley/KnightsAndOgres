@@ -12621,7 +12621,6 @@ GameObject:
   - component: {fileID: 2073896679}
   - component: {fileID: 2073896681}
   - component: {fileID: 2073896680}
-  - component: {fileID: 2073896682}
   - component: {fileID: 2073896683}
   - component: {fileID: 2073896684}
   m_Layer: 0
@@ -12661,13 +12660,14 @@ MonoBehaviour:
   turnController: {fileID: 2073896678}
   mainBoardController: {fileID: 0}
   mainBoard: {fileID: 2025471461}
-  terrainProceduralGeneration: {fileID: 2073896682}
   grassGeneration: {fileID: 2073896683}
   spriteMerger: {fileID: 2073896684}
   aIController: {fileID: 2073896679}
   easyAIController: {fileID: 2073896681}
   miniMaxAI: {fileID: 2073896680}
-  grassSprite: {fileID: 0}
+  grassSprite1: {fileID: 0}
+  grassSprite2: {fileID: 0}
+  grassSprite3: {fileID: 0}
   knightSprite: {fileID: 0}
   ogreSprite: {fileID: 0}
   castleSprite: {fileID: 0}
@@ -12733,19 +12733,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2c51b424a14a2b080610e8d241063b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2073896682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073896673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39ad2eb5ffdeee3028792cad1fec45a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newGrassSprite: {fileID: 0}
 --- !u!114 &2073896683
 MonoBehaviour:
   m_ObjectHideFlags: 0
