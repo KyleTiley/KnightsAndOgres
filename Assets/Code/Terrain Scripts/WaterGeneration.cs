@@ -13,14 +13,31 @@ public class WaterGeneration : MonoBehaviour
     [SerializeField] RawImage waterTexture;
 
     // VARIABLES
+    // Dimensions of water texture
     int waterWidth = 210;
     int waterHeight = 1080;
-    float waveScale = 10.0f;
+    // 
+    [SerializeField] float xOrigin = 0.0f;
+    [SerializeField] float yOrigin = 0.0f;
+    [SerializeField] float waveScale = 5.0f;
     int maxRnd = 10000;
+
+    [SerializeField] bool toggle = false;
 
     // FUNCTIONS
     private void Start() {
+        System.Random rnd = new System.Random();
+        xOrigin = rnd.Next(0, maxRnd);
+        yOrigin = rnd.Next(0, maxRnd);
         GenerateWaterTexture();
+    }
+
+    private void Update() {
+        // Used for testing purposes
+        if(toggle){
+            GenerateWaterTexture();
+            toggle = false;
+        }
     }
 
     public void GenerateWaterTexture(){
@@ -38,23 +55,16 @@ public class WaterGeneration : MonoBehaviour
     }
 
     private Color32 GetPixelColour(int _x, int _y){
-        System.Random rnd = new System.Random();
+        float x = ((float)_x + xOrigin) / waterWidth * waveScale;
+        float y = ((float)_y + yOrigin) / waterHeight * waveScale;
 
-        int rndX = rnd.Next(0,maxRnd);
-        float xOffset = rndX / maxRnd;
-        float x = (float)_x / waterWidth * waveScale;
-
-        int rndY = rnd.Next(0,maxRnd);
-        float yOffset = rndY / maxRnd;
-        float y = (float)_y / waterHeight * waveScale;
-
-        float perlinValue = Mathf.PerlinNoise(x + xOffset, y + yOffset);
+        float perlinValue = Mathf.PerlinNoise(x, y);
 
         Color32 setColour;
         if(perlinValue < 0.2){
             setColour = whiteWater;
         }
-        else if(perlinValue < 0.6){
+        else if(perlinValue < 0.5){
             setColour = lightWater;
         }
         else{
