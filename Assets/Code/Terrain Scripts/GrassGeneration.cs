@@ -21,6 +21,7 @@ public class GrassGeneration : MonoBehaviour
 
     int bladesOfGrass = 3;
     int grassHeight;
+    int grassThickness = 5; // Keep this as an odd number for symmetry
     int randomGrassTexture = 20;
     
     public void GenerateGrassTile(int whichGrass){
@@ -74,11 +75,11 @@ public class GrassGeneration : MonoBehaviour
                         System.Random rnd = new System.Random();
                         int newRnd = rnd.Next(-1,2);
 
-                        thisGrassTexture.SetPixel(startingPoints[xPoint, yPoint, 0] + (int)offset + newRnd, startingPoints[xPoint, yPoint, 1] + height, grassBladeColour);
-                        thisGrassTexture.SetPixel(startingPoints[xPoint, yPoint, 0] + (int)offset + newRnd +1, startingPoints[xPoint, yPoint, 1] + height, grassBladeColour);
-                        thisGrassTexture.SetPixel(startingPoints[xPoint, yPoint, 0] + (int)offset + newRnd -1, startingPoints[xPoint, yPoint, 1] + height, grassBladeColour);
-                        thisGrassTexture.SetPixel(startingPoints[xPoint, yPoint, 0] + (int)offset + newRnd -2, startingPoints[xPoint, yPoint, 1] + height, grassBladeColour);
-                        thisGrassTexture.SetPixel(startingPoints[xPoint, yPoint, 0] + (int)offset + newRnd +2, startingPoints[xPoint, yPoint, 1] + height, grassBladeColour);
+                        // Adds thickness to grass blades
+                        for(int i = 0; i < grassThickness; i++){
+                            int thicknessOffset = (-(grassThickness - 1) / 2) + i;
+                            thisGrassTexture.SetPixel(startingPoints[xPoint, yPoint, 0] + (int)offset + newRnd + thicknessOffset, startingPoints[xPoint, yPoint, 1] + height, grassBladeColour);
+                        }
                     
                         // Cummulative offset to spread out blades
                         offset += offset/(grassOnX + height);
@@ -100,17 +101,6 @@ public class GrassGeneration : MonoBehaviour
         // Applies the created texture and overwrites the blank texture
         thisGrassTexture.Apply();
         newGrassSprite = Sprite.Create(thisGrassTexture, new Rect(0.0f, 0.0f, thisGrassTexture.width, thisGrassTexture.height), new Vector2(0.5f, 0.5f), 100.0f);
-    }
-
-    private void SetXandY(){
-
-        // System.Random rnd = new System.Random();
-        // int rndXandY = rnd.Next(0,3);
-
-
-
-        // int grassOnX = 4;
-        // sint grassOnY = 3;
     }
 
     // Sets starting points based on how many grass is wanted on the X and Y axis respectively
@@ -135,9 +125,5 @@ public class GrassGeneration : MonoBehaviour
                 startingPoints[xPoint, yPoint, 1] = (yPoint * yOffset) + (yOffset + yRnd)/2;
             }
         }
-
-        // for(int i = 0; i < numberOfStartingPoints; i++){
-        //     Debug.Log(startingPoints[i, 0] + " : " + startingPoints[i, 1]);
-        // }
     }
 }
