@@ -59,7 +59,8 @@ public class MainBoardController : MonoBehaviour
     }
 
     // Checks all possibilities for a won game
-    public void CheckGameWinner(bool _isPlayersTurn){
+    public void CheckGameWinner(bool _isPlayersTurn)
+    {
         CheckMainRows(_isPlayersTurn);
         CheckMainColumns(_isPlayersTurn);
         CheckMainDiagonals(_isPlayersTurn);
