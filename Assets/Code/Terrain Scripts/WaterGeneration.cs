@@ -40,6 +40,7 @@ public class WaterGeneration : MonoBehaviour
         }
     }
 
+    // Generates the water texture, calling for a new pixel colour for each pixel in the texture
     public void GenerateWaterTexture(){
         Texture2D newWaterTexture = new Texture2D(waterWidth, waterHeight);
 
@@ -54,12 +55,15 @@ public class WaterGeneration : MonoBehaviour
         waterTexture.texture = newWaterTexture;
     }
 
+    // Uses Perlin Noise, with 3 colours mapped to the range of values, to create a the water effect
     private Color32 GetPixelColour(int _x, int _y){
+        // Maps the pixel to get Perlin Noise for
         float x = ((float)_x + xOrigin) / waterWidth * waveScale;
         float y = ((float)_y + yOrigin) / waterHeight * waveScale;
 
         float perlinValue = Mathf.PerlinNoise(x, y);
 
+        // Sets colours
         Color32 setColour;
         if(perlinValue < 0.2){
             setColour = whiteWater;
