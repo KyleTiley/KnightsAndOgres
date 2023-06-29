@@ -154,7 +154,7 @@ public class Neural_Network_Trainer : MonoBehaviour
     //    return maxIndex;
     //}
 
-    ////public bool GameWon(bool) //Winning conditions
+    ////public bool GameWon(bool) //Winning conditions             //This method is to pull the win game method that was made in another script and shows for when the game was won
     ////{
     ////    return miniMaxAiScript.CheckforWin(bool);
     ////}

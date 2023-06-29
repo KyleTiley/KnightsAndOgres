@@ -37,7 +37,7 @@ public class NeuralNetwork_Player : MonoBehaviour
         int move = GetBestMove(game_Board);
 
         //Send info to create the ai character on the board
-        //This is where I wanted to make the characters apear on the board and was stuggling on how to do this implimintation
+        //uses the charaters ai for the info on the pkaces of the characters,
     }
 
     private int GetBestMove (float[] board_State)

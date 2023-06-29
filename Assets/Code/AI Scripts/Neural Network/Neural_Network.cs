@@ -179,7 +179,8 @@ public class Neural_Network : MonoBehaviour
         }
 
         //Save to a text file
-        public void SaveTrainingData(string file_Name)
+        /*This code writes down basiicaly all of the ai's movements*/
+        public void SaveTrainingData(string file_Name)                               
         {
             string folder_Path = "Assets/TrainingData";
             string file_Path = Path.Combine(folder_Path, file_Name);
@@ -231,7 +232,7 @@ public class Neural_Network : MonoBehaviour
         }
 
         //To load the taining data of the game
-
+        /*This code uses the training data file that was written using the writing data function and laods it for the ai so it knows what moves are best to do*/
         public void LoadTrainingData(string file_Name)
         {
             string folder_Path = "Assets/TrainingData";
