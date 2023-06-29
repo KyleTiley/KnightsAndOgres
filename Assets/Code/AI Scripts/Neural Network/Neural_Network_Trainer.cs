@@ -6,6 +6,7 @@ public class Neural_Network_Trainer : MonoBehaviour
 {
     public Neural_Network.NeuralNetwork neural_Network;
     public MiniMaxAI miniMaxAiScript;
+    public EasyAIController easyAI_Controller;
 
     [SerializeField] int training_Session; //amount of sessions to train
 
@@ -23,6 +24,9 @@ public class Neural_Network_Trainer : MonoBehaviour
 
         //Saves the training data
         neural_Network.SaveTrainingData("training_data.txt");
+
+        //This Random Play controller will start the process of the ai placing down the characters on random spots on the board
+        AI_Placing_Random();
 
     }
 
@@ -47,6 +51,12 @@ public class Neural_Network_Trainer : MonoBehaviour
                 //PlayerTrainingGamePLayerStart(board_State);
             }
         }
+    }
+
+    private void AI_Placing_Random()
+    {
+        easyAI_Controller.RandomPlay();
+
     }
 
     //void PlayTrainingGame_AIStart(float[] board_State)

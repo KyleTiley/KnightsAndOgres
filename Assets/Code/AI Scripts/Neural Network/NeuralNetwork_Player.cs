@@ -9,6 +9,8 @@ public class NeuralNetwork_Player : MonoBehaviour
 
     public Neural_Network.NeuralNetwork neural_Network;
 
+    public EasyAIController easyAI_Controller;
+
     [SerializeField] float[] game_Board;
 
     //[SerializeField] private string trainingDataFileName = " name ";
@@ -28,6 +30,9 @@ public class NeuralNetwork_Player : MonoBehaviour
 
     }
 
+
+
+
     public void GetAI_Move()
     {
         //get the current board state
@@ -36,8 +41,10 @@ public class NeuralNetwork_Player : MonoBehaviour
         //make a move baised on the output of the neural network
         int move = GetBestMove(game_Board);
 
-        //Send info to create the ai character on the board
-        //uses the charaters ai for the info on the pkaces of the characters,
+        //Send info to place the characters randomly on the board
+        easyAI_Controller.RandomPlay();
+
+
     }
 
     private int GetBestMove (float[] board_State)
