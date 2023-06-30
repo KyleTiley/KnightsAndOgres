@@ -22,7 +22,6 @@ public class NeuralNetworkAI : AIController
         int move = GetBestMove(game_Board);
     }
 
-    public Neural_Network.NeuralNetwork neural_Network;
 
     [SerializeField] float[] game_Board;
 
@@ -30,30 +29,17 @@ public class NeuralNetworkAI : AIController
 
     private void Awake()
     {
-        int input_Size = 9; //Size of the input layer
-        int hidden_Size = 18; //Size of hidden layer
-        int output_Size = 9; //Size of the output layer
-
-        neural_Network = new Neural_Network.NeuralNetwork(input_Size, hidden_Size, output_Size);
-
         //Load the training data
         LoadTrainingData("Assets/Training");
-
     }
 
     private void Start()
     {
-        int input_Size = 81; //Size of the input layer
-        int hidden_Size = 162; //Size of the hidden layer (input + output)
-        int output_Size = 81; // Size of the output layer
-
-        neural_Network = new Neural_Network.NeuralNetwork(input_Size, hidden_Size, output_Size);
-
         //Trains the neural network
         Train_NeuralNetwork(training_Session);
 
         //Saves the training data
-        neural_Network.SaveTrainingData("training_data.txt");
+        SaveTrainingData("training_data.txt");
     }
 
     private int GetBestMove (float[] board_State)
