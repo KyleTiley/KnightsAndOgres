@@ -18,29 +18,23 @@ public class NeuralNetworkAI : AIController
         tileToPlay = Random.Range(0, availableTiles.Count);
         availableTiles[tileToPlay].OnTileClick();
 
-        //make a move baised on the output of the neural network
-        int move = GetBestMove(game_Board);
+        //make a move based on the output of the neural network
+        // int move = GetBestMove(game_Board);
     }
 
 
-    [SerializeField] float[] game_Board;
+    // [SerializeField] float[] game_Board;
 
     //[SerializeField] private string trainingDataFileName = " name ";
 
-    private void Awake()
-    {
-        //Load the training data
-        LoadTrainingData("Assets/Training");
-    }
+    // private void Awake()
+    // {
+    //     //Load the training data
+    //     LoadTrainingData("training_data.txt");
 
-    private void Start()
-    {
-        //Trains the neural network
-        Train_NeuralNetwork(training_Session);
-
-        //Saves the training data
-        SaveTrainingData("training_data.txt");
-    }
+    //     //Saves the training data
+    //     SaveTrainingData("training_data.txt");
+    // }
 
     private int GetBestMove (float[] board_State)
     {
@@ -67,39 +61,35 @@ public class NeuralNetworkAI : AIController
         return max_Index;
     }
 
-    private void TrainNetwork(){
+    // public MiniMaxAI miniMaxAiScript;
 
-    }
-
-    public MiniMaxAI miniMaxAiScript;
-
-    [SerializeField] int training_Session; //amount of sessions to train
+    // [SerializeField] int training_Session; //amount of sessions to train
 
 
     
 
 
-    //uses the board
-    private void Train_NeuralNetwork(int iterations)
-    {
-        for (int i = 0; i < iterations; i++)
-        {
-            //Sets the board to empty
-            float[] board_State = new float[9];
+    // //uses the board
+    // private void Train_NeuralNetwork(int iterations)
+    // {
+    //     for (int i = 0; i < iterations; i++)
+    //     {
+    //         //Sets the board to empty
+    //         float[] board_State = new float[9];
 
-            //Randomly chooses which player starts in the training
-            int choose_Start = Random.Range(0, 2);
+    //         //Randomly chooses which player starts in the training
+    //         int choose_Start = Random.Range(0, 2);
 
-            if(choose_Start == 0)
-            {
-                //PlayTrainingGame_AIStart(board_State);
-            }
-            else
-            {
-                //PlayerTrainingGamePLayerStart(board_State);
-            }
-        }
-    }
+    //         if(choose_Start == 0)
+    //         {
+    //             //PlayTrainingGame_AIStart(board_State);
+    //         }
+    //         else
+    //         {
+    //             //PlayerTrainingGamePLayerStart(board_State);
+    //         }
+    //     }
+    // }
 
     //void PlayTrainingGame_AIStart(float[] board_State)
     //{
@@ -453,6 +443,8 @@ public class NeuralNetworkAI : AIController
         {
             string folder_Path = "Assets/TrainingData";
             string file_Path = Path.Combine(folder_Path, file_Name);
+
+            Debug.Log(file_Path.ToString());
 
             if (File.Exists(file_Path))
             {
