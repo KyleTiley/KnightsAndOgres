@@ -3,241 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class NeuralNetworkAI : AIController
+public class Neural_Network : MonoBehaviour
 {
-    // I COULD NOT FINISH THE NEURAL NETWORK IN TIME
-    // SO I COMMENTED IT OUT AND USE A RANDOM PLAY FUNCTION INSTEAD
-    // JUST SO THE TURN IS AT LEAST PLAYED WHEN THE NEURAL NETWORK AI IS CALLED
-
-    public void NeuralNetwork(){
-        // Only collects tiles, since easy AI does not use minimax and rather chooses a random tile
-        CollectAvailableTiles();
-
-        // Randomly chooses the tile to play
-        int tileToPlay;
-        tileToPlay = Random.Range(0, availableTiles.Count);
-        availableTiles[tileToPlay].OnTileClick();
-
-        //make a move baised on the output of the neural network
-        int move = GetBestMove(game_Board);
-    }
-
-    public Neural_Network.NeuralNetwork neural_Network;
-
-    [SerializeField] float[] game_Board;
-
-    //[SerializeField] private string trainingDataFileName = " name ";
-
-    private void Awake()
+    public class NeuralNetwork
     {
-        int input_Size = 9; //Size of the input layer
-        int hidden_Size = 18; //Size of hidden layer
-        int output_Size = 9; //Size of the output layer
-
-        neural_Network = new Neural_Network.NeuralNetwork(input_Size, hidden_Size, output_Size);
-
-        //Load the training data
-        LoadTrainingData("Assets/Training");
-
-    }
-
-    private void Start()
-    {
-        int input_Size = 81; //Size of the input layer
-        int hidden_Size = 162; //Size of the hidden layer (input + output)
-        int output_Size = 81; // Size of the output layer
-
-        neural_Network = new Neural_Network.NeuralNetwork(input_Size, hidden_Size, output_Size);
-
-        //Trains the neural network
-        Train_NeuralNetwork(training_Session);
-
-        //Saves the training data
-        neural_Network.SaveTrainingData("training_data.txt");
-    }
-
-    private int GetBestMove (float[] board_State)
-    {
-        //Choose the move with the hoghest output value
-        float[] output = FeedForward(board_State);
-
-        //Find the index of the highest output value for a valid move
-        int max_Index = -1;
-        float max_Value = -Mathf.Infinity;
-
-        for(int i = 0; i < output.Length; i++)
-        {
-            if(board_State[i] == 0 && output[i] > max_Value)
-            {
-                max_Index = i;
-                max_Value = output[i];
-            }
-        }
-
-        if(max_Index == -1)
-        {
-            Debug.LogError("No valid move found / AI can't make a move");
-        }
-        return max_Index;
-    }
-
-    private void TrainNetwork(){
-
-    }
-
-    public MiniMaxAI miniMaxAiScript;
-
-    [SerializeField] int training_Session; //amount of sessions to train
-
-
-    
-
-
-    //uses the board
-    private void Train_NeuralNetwork(int iterations)
-    {
-        for (int i = 0; i < iterations; i++)
-        {
-            //Sets the board to empty
-            float[] board_State = new float[9];
-
-            //Randomly chooses which player starts in the training
-            int choose_Start = Random.Range(0, 2);
-
-            if(choose_Start == 0)
-            {
-                //PlayTrainingGame_AIStart(board_State);
-            }
-            else
-            {
-                //PlayerTrainingGamePLayerStart(board_State);
-            }
-        }
-    }
-
-    //void PlayTrainingGame_AIStart(float[] board_State)
-    //{
-    //    int ai_Move = -2; //Initializes the AIMove Variable
-
-    //    while (!GameWon(board_State, 1) && !GameWon(board_State, -1) && !BoardFull(board_State))
-    //    {
-    //        // Let's the AI make a move and updates the board after the move
-    //        ai_Move = GetBestMove(board_State);
-    //        board_State[ai_Move] = 1f;
-
-    //        if (GameWon(board_State, 1) || BoardFull(board_State))
-    //        {
-    //            break;
-    //        }
-
-    //        //Simulates opponent's moves by random selection and updates the board after the move
-
-    //        int opponent_Move = GetRandomValidMove(board_State);
-    //        board_State[opponent_Move] = -1f;
-
-    //        if(GameWon(board_State, -1) || BoardFull(board_State))
-    //        {
-    //            break;
-    //        }
-    //    }
-
-        //Assign target ouputs for the ai's move
-    //    float[] targetOutputs = new float[board_State.Length];
-    //    targetOutputs[ai_Move] = 1f;
-
-    //    //Train the player with the current board state and target outputs
-    //    neural_Network.Train(board_State, targetOutputs);
-    //}
-
-    //void PlayerTrainingGamePLayerStart(float[] board_State)
-    //{
-    //    int aiMove = -1; //Initalizes the AIMove variable
-        
-    //    while (!GameWon(board_State, 1) && !GameWon(board_State, -1) && !BoardFull(board_State))
-    //    {
-    //        //Simulats opponent's move and updates board
-    //        int opponentMove = GetRandomValidMove(board_State);
-    //        board_State[opponentMove] = -1f;
-
-    //        if(GameWon(board_State, -1) || BoardFull(board_State))
-    //        {
-    //            break;
-    //        }
-
-    //        //Let the Ai make a move and updates board
-    //        aiMove = GetBestMove(board_State);
-    //        board_State[aiMove] = 1f;
-
-    //        if(GameWon(board_State, 1) || BoardFull(board_State))
-    //        {
-    //            break;
-    //        }
-
-    //    }
-
-        //Assigns the target output for the players move
-    //    float[] targetOutputs = new float[board_State.Length];
-    //    targetOutputs[aiMove] = 1f;
-
-    //    //trains the player with the current board state and target outputs
-    //    neural_Network.Train(board_State, targetOutputs);
-    //}
-
-    //private int GetRandomValidMove(float[] board_State) // Creates an index for the player
-    //{
-    //    int randomIndex;
-    //    do
-    //    {
-    //        randomIndex = Random.Range(0, 9);
-    //    }
-    //    while (board_State[randomIndex] != 0f);
-
-    //    return randomIndex;
-    //}
-
-    //public int GetBestMove(float[] board_State)
-    //{
-    //    float[] outputs = neural_Network.FeedForward(board_State);
-
-    //    //Finds teh index of the highest output value for a valid move
-    //    int maxIndex = -1;
-    //    float maxValue = Mathf.Infinity;
-
-    //    for (int i = 0; i < outputs.Length; i++)
-    //    {
-    //        if(board_State[i] == 0 && outputs[i] > maxValue)
-    //        {
-    //            maxIndex = i;
-    //            maxValue = outputs[i];
-    //        }
-    //    }
-
-    //    if (maxIndex == -1)
-    //    {
-    //        Debug.LogError("No valid move found! The AI player cannot make a move");
-    //    }
-
-    //    return maxIndex;
-    //}
-
-    ////public bool GameWon(bool) //Winning conditions             //This method is to pull the win game method that was made in another script and shows for when the game was won
-    ////{
-    ////    return miniMaxAiScript.CheckforWin(bool);
-    ////}
-
-    //public bool BoardFull(float[] _boardSate)
-    //{
-    //    for (int i = 0; i < 9; i++)
-    //    {
-    //        if (_boardSate[i] == 0f)
-    //        {
-    //            return false;
-    //        }
-    //    }
-    //    return true;
-    //}
-
-    private int input_Size; //Size of the input layer / Amount of Inputs
+        private int input_Size; //Size of the input layer / Amount of Inputs
 
         private int hidden_Size; //Size of the hidden layer (input + output sizes of the game / amount of nodes)
 
@@ -253,7 +23,7 @@ public class NeuralNetworkAI : AIController
 
         private float learning_Rate = 0.01f; //Default learning rate but 0.01 and 0.1 are most used and recomended as a staring point
 
-        public void CreateNetwork(int _inputSize, int _hiddenSize, int _outputSize) //Constructor for the Neural Network
+        public NeuralNetwork(int _inputSize, int _hiddenSize, int _outputSize) //Constructor for the Neural Network
         {
             input_Size = _inputSize;
             hidden_Size = _hiddenSize;
@@ -517,4 +287,7 @@ public class NeuralNetworkAI : AIController
                 Debug.LogError("Training data file not found");
             }
         }
+
+    }
+
 }
