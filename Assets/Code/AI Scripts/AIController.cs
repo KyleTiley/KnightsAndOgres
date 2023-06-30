@@ -13,6 +13,7 @@ public class AIController : MonoBehaviour
 
     private EasyAIController easyAIController;
     private MiniMaxAI miniMaxAI;
+    private NeuralNetworkAI neuralNetworkAI;
 
     // VARIABLES FOR BOARD STATES AND EVALUATION
     protected List<TileController> allTiles = new List<TileController>();
@@ -34,21 +35,24 @@ public class AIController : MonoBehaviour
 
         easyAIController = gameController.easyAIController;
         miniMaxAI = gameController.miniMaxAI;
+        neuralNetworkAI = gameController.neuralNetworkAI;
 
         CollectAllTiles();
     }
 
     // Plays the turn based on the chosen AI difficulty
     public void PlayTurn(bool shouldHardCode){
-        if(difficultyController.gameType != "EASY"){
+        if(difficultyController.gameType != "RANDOM"){
             if(!shouldHardCode){
-                if(difficultyController.gameType == "MEDIUM"){
-                    depthSpecified = 2;
+                if(difficultyController.gameType == "MINIMAX"){
+                    // Plays the MiniMax AI
+                    depthSpecified = 4;
+                    miniMaxAI.MiniMax();
                 }
                 else{
-                    depthSpecified = 4;
+                    // Plays the Neural Network AI
+                    neuralNetworkAI.NeuralNetwork();
                 }
-                miniMaxAI.MiniMax();
             }
             else{
                 HardcodedFirstMove();

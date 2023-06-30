@@ -57,7 +57,6 @@ public class BoardController : MonoBehaviour
     private void CheckRows(bool _player){
         // Top row
         if(tileControllers[1].thisSprite.sprite.name != ""){
-            Debug.Log(tileControllers[1].thisSprite.sprite.name);
             if(tileControllers[0].thisSprite.sprite.name == tileControllers[1].thisSprite.sprite.name
             && tileControllers[1].thisSprite.sprite.name == tileControllers[2].thisSprite.sprite.name){
                 SetBoardWinner(_player);

@@ -113,6 +113,5 @@ public class TileController : MonoBehaviour
             // Calls to switch players
             turnController.SwitchPlayers();
         }
-        Debug.Log(this.thisSprite.name);
     }
 }

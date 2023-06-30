@@ -12624,6 +12624,7 @@ GameObject:
   - component: {fileID: 2073896680}
   - component: {fileID: 2073896683}
   - component: {fileID: 2073896684}
+  - component: {fileID: 2073896685}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -12666,6 +12667,7 @@ MonoBehaviour:
   aIController: {fileID: 2073896679}
   easyAIController: {fileID: 2073896681}
   miniMaxAI: {fileID: 2073896680}
+  neuralNetworkAI: {fileID: 2073896685}
   grassSprite1: {fileID: 0}
   grassSprite2: {fileID: 0}
   grassSprite3: {fileID: 0}
@@ -12761,6 +12763,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spritesToMerge: []
   finalSprite: {fileID: 0}
+--- !u!114 &2073896685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073896673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2da9ab2ef592474ab4094948bb12e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2081592178
 GameObject:
   m_ObjectHideFlags: 0
@@ -13120,6 +13134,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterTexture: {fileID: 2104380423}
+  xOrigin: 0
+  yOrigin: 0
+  waveScale: 5
+  toggle: 0
 --- !u!1 &2110506460
 GameObject:
   m_ObjectHideFlags: 0

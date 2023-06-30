@@ -333,7 +333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hard AI
+  m_text: Neural AI
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Easy AI
+  m_text: Random AI
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Medium AI
+  m_text: MiniMax AI
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2209,7 +2209,7 @@ GameObject:
   - component: {fileID: 1505585540}
   - component: {fileID: 1505585539}
   m_Layer: 5
-  m_Name: EasyAIButton
+  m_Name: RandomAIButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2282,7 +2282,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1728133234}
         m_TargetAssemblyTypeName: DifficultyController, Assembly-CSharp
-        m_MethodName: EasyAI
+        m_MethodName: RandomAI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2745,7 +2745,7 @@ GameObject:
   - component: {fileID: 1823038955}
   - component: {fileID: 1823038954}
   m_Layer: 5
-  m_Name: MediumAIButton
+  m_Name: MiniMaxAIButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2818,7 +2818,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1728133234}
         m_TargetAssemblyTypeName: DifficultyController, Assembly-CSharp
-        m_MethodName: MediumAI
+        m_MethodName: MiniMaxAI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2967,7 +2967,7 @@ GameObject:
   - component: {fileID: 1882871494}
   - component: {fileID: 1882871493}
   m_Layer: 5
-  m_Name: HardAIButton
+  m_Name: NeuralAIButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3040,7 +3040,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1728133234}
         m_TargetAssemblyTypeName: DifficultyController, Assembly-CSharp
-        m_MethodName: HardAI
+        m_MethodName: NeuralAI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
