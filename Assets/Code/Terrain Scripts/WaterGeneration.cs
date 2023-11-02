@@ -12,6 +12,10 @@ public class WaterGeneration : MonoBehaviour
 
     [SerializeField] RawImage waterTexture;
 
+    // SINGLETON ACCESS FOR SIGN
+    private DifficultyController difficultyController;
+    private GameController gameController;
+
     // VARIABLES
     // Dimensions of water texture
     int waterWidth = 210;
@@ -30,6 +34,12 @@ public class WaterGeneration : MonoBehaviour
         xOrigin = rnd.Next(0, maxRnd);
         yOrigin = rnd.Next(0, maxRnd);
         GenerateWaterTexture();
+
+        // Put the changing of the sign in here, as it is the easiest place to access it
+        // Set singleton access
+        gameController = GameController.GameControllerInstance;
+        difficultyController = DifficultyController.DifficultyControllerInstance;
+        gameController.winnerText.text = difficultyController.gameType;
     }
 
     private void Update() {

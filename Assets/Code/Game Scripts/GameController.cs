@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
     public AIController aIController;
     public EasyAIController easyAIController;
     public MiniMaxAI miniMaxAI;
+    public NeuralNetworkAI neuralNetworkAI;
 
     // IMAGES FOR TILES
     public Sprite grassSprite1;

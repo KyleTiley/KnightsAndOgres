@@ -92,14 +92,14 @@ public class TileController : MonoBehaviour
                 thisSprite.sprite = gameController.ogreSprite;
             }
 
-            // Checks for a tie in the board before doing anything else
-            boardController.CheckForTie();
-
             // Checks if at least 3 tiles have been played, as that is the minimum to win a board
             if(boardController.tilesPlayed >= 3){
                 // Calls to check if the board is won
                 boardController.CheckBoardWinner(turnController.isPlayersTurn);
             }
+
+            // Checks for a tie in the board before doing anything else
+            boardController.CheckForTie();
 
             // Calls to switch colours befoer choosing the next board
             turnController.SwitchColours();
@@ -113,6 +113,5 @@ public class TileController : MonoBehaviour
             // Calls to switch players
             turnController.SwitchPlayers();
         }
-        Debug.Log(this.thisSprite.name);
     }
 }

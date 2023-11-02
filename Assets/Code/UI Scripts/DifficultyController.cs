@@ -8,7 +8,7 @@ public class DifficultyController : MonoBehaviour
     public static DifficultyController DifficultyControllerInstance { get; private set; }
 
     // Denotes game mode
-    public string gameType;
+    public string gameType = "";
 
     private void Awake() {
         //Creates difficulty controller singleton
@@ -26,15 +26,15 @@ public class DifficultyController : MonoBehaviour
         gameType = "PVP";
     }
 
-    public void EasyAI(){
-        gameType = "EASY";
+    public void RandomAI(){
+        gameType = "RANDOM";
     }
 
-    public void MediumAI(){
-        gameType = "MEDIUM";
+    public void MiniMaxAI(){
+        gameType = "MINIMAX";
     }
 
-    public void HardAI(){
-        gameType = "HARD";
+    public void NeuralAI(){
+        gameType = "NEURAL";
     }
 }

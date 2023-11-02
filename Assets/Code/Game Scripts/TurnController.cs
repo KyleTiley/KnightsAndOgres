@@ -55,8 +55,10 @@ public class TurnController : MonoBehaviour
         isPlayersTurn = !isPlayersTurn;
         // Calls the AI to play their move if it is their turn
         if(!isPlayersTurn){
-            if(gameIsAgainstAI && gameController.winnerText.text == "Battle!"){
-                aIController.PlayTurn(false);
+            if(gameIsAgainstAI){
+                if(!gameController.winnerText.text.Contains("Win")){
+                    aIController.PlayTurn(false);
+                }
             }
         }
     }
